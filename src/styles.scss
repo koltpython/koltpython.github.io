@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+
+$koc-primary-colors: (
+    50 : #f8e3e6,
+    100 : #edb8c0,
+    200 : #e28997,
+    300 : #d6596d,
+    400 : #cd364d,
+    500 : #c4122e,
+    600 : #be1029,
+    700 : #b60d23,
+    800 : #af0a1d,
+    900 : #a20512,
+    A100 : #ffcdcf,
+    A200 : #ff9a9f,
+    A400 : #ff676e,
+    A700 : #ff4d56,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$koc-primary: mat-palette($koc-primary-colors);
+
+$koc-accent: mat-palette($mat-grey, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$koc-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$koc-theme: mat-light-theme($koc-primary, $koc-accent, $koc-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($koc-theme);
