@@ -1,0 +1,26 @@
+.main-content {
+    position: relative;
+    top: 64px;
+    margin-bottom: 96px;
+}
+
+app-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+@media (max-width: 720px) {
+    .main-content {
+      top: 128px;
+      margin-bottom: 160px;
+    }
+} 
+
+@media (max-width: 598px) {
+    .main-content {
+        top: 112px;
+    }
+}

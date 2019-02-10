@@ -1,0 +1,31 @@
+<mat-toolbar color="primary" role="heading">
+  <mat-toolbar-row>
+    <a mat-button routerLink="/" aria-label="KOLT Python">
+      <img class="logo"
+          src="../../assets/kolt_python_logo.png"
+          alt="KOLT Python">
+    </a>
+    
+    <a mat-button class="navbar-hide-small"
+        *ngFor="let section of sections"
+        [routerLink]="section.link"> {{section.name}} </a>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="spacer"></span>
+    <a mat-raised-button color="accent"
+      routerLink="apply" > <span class="text"> APPLY </span> </a>
+    <a mat-button href="https://github.com/koltpython"
+     target="_blank" aria-label="GitHub Repository">
+    <img class="logo-small"
+         src="../../assets/github_logo.png"
+         alt="GitHub Repository">
+    <span class="navbar-hide-small"> GitHub </span>
+    </a>
+  </mat-toolbar-row>
+  <mat-toolbar-row class="navbar-show-small second-row">
+      <a mat-button
+      *ngFor="let section of sections"
+      [routerLink]="section.link"
+      class="spacer"> {{section.name}} </a>
+  </mat-toolbar-row>
+</mat-toolbar>

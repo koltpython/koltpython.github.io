@@ -1,0 +1,38 @@
+.text {
+  color: #c4122e;
+  font-weight: bold;
+}
+
+.logo {
+  height: 50px;
+  margin: 0 4px 3px 0;
+  vertical-align: middle;
+}
+
+.logo-small {
+  height: 30px;
+  margin: 0 4px 3px 0;
+  vertical-align: middle;
+}
+
+.navbar-show-small{
+  display: none;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/**
+  * Rules for when the device is detected to be a small screen.
+  * Moves content two rows instead of one.
+  */
+@media (max-width: 720px) {
+  .navbar-hide-small {
+    display: none;
+  }
+
+  .navbar-show-small {
+    display: flex;
+  }
+}
