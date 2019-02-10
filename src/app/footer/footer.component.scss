@@ -1,0 +1,31 @@
+footer {
+    padding: 16px;
+    background: rgb(244, 244, 244);
+    display: flex;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.kolt-logo {
+    height: 60px;
+}
+
+.koc-logo {
+    height: 60px;
+}
+
+/**
+  * Rules for when the device is detected to be a small screen.
+  * Moves content two rows instead of one.
+  */
+  @media (max-width: 720px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .spacer {
+        display: none;
+    }
+  }
