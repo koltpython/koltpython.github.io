@@ -57,3 +57,5 @@ $koc-theme: mat-light-theme($koc-primary, $koc-accent, $koc-warn);
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($koc-theme);
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
