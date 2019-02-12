@@ -7,9 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AssignmentsComponent implements OnInit {
 
+  dataSource = ASSIGNMENT_DATA;
+  columnsToDisplay = ['no', 'title', 'handout', 'starter', 'release', 'due'];
+
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+const ASSIGNMENT_DATA: Assignment[] = [
+  {
+    no: 0,
+    title: 'Welcome to Python',
+    handoutLink: 'https://github.com/koltpython/python-assignments/blob/master/Assignment0/Assignment0.md',
+    starterCode: null,
+    releaseDate: new Date(2019, 1, 18, 19, 0),
+    dueDate: new Date(2019, 1, 25, 17, 30)  
+  }
+]
+
+export interface Assignment {
+  no: number,
+  title: String,
+  handoutLink: String,
+  starterCode: String,
+  releaseDate: Date,
+  dueDate: Date
 }

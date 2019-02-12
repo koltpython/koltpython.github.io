@@ -1,3 +1,52 @@
-<p>
-  assignments works!
-</p>
+<mat-card class="mat-elevation-z4">
+  <mat-card-title>Assignments</mat-card-title>
+  <mat-card-content>
+    You will have 4-6 programming assignments. Grades are given on the checkmark scale and the main criteria is <b>your effort</b > on assignments. We think assignments are an opportunity to challenge yourself to really learn the material, so enjoy! We hope you have fun completing these assignments.
+  </mat-card-content>
+  
+  <table mat-table
+       [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- No Column -->
+    <ng-container matColumnDef="no">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let element"> <span class="bold-text"> {{ element.no }} </span> </td>
+    </ng-container>
+
+    <!-- Title Column -->
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef> Title </th>
+      <td mat-cell *matCellDef="let element"> <span class="bold-text"> {{ element.title }} </span> </td>
+    </ng-container>
+
+    <!-- Handout Column -->
+    <ng-container matColumnDef="handout">
+      <th mat-header-cell *matHeaderCellDef> Handout </th>
+      <td mat-cell *matCellDef="let element"> <a href="{{element.handoutLink}}" target="_blank">Handout</a></td>
+    </ng-container>
+
+    <!-- Starter Code Column -->
+    <ng-container matColumnDef="starter">
+      <th mat-header-cell *matHeaderCellDef> Starter Code </th>
+      <td mat-cell *matCellDef="let element">
+        <a *ngIf="element.starterCode; else elseBlock" href="{{element.starterCode}}" target="_blank">Starter Code</a></td>
+        <ng-template #elseBlock> None </ng-template>
+    </ng-container>
+  
+    <!-- Release Column -->
+    <ng-container matColumnDef="release">
+      <th mat-header-cell *matHeaderCellDef> Released </th>
+      <td mat-cell *matCellDef="let element"> {{ element.releaseDate | date:'EEEE, MMMM d, h:mm a' }} </td>
+    </ng-container> 
+
+    <!-- Due Column -->
+    <ng-container matColumnDef="due">
+      <th mat-header-cell *matHeaderCellDef> Due </th>
+      <td mat-cell *matCellDef="let element"> {{ element.dueDate | date:'EEEE, MMMM d, h:mm a' }} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+</table>
+</mat-card>
+
