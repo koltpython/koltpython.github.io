@@ -8,13 +8,13 @@ import { ResourcesComponent } from './resources/resources.component';
 import { ApplyComponent } from './apply/apply.component';
 
 const routes: Routes = [
-  { path:'', component:OverviewComponent },
+  { path:'', redirectTo:'apply', pathMatch: 'full'},
   { path:'lecture', component:LectureComponent },
   { path:'assignments', component:AssignmentsComponent },
   { path:'contests', component:ContestsComponent },
   { path:'resources', component:ResourcesComponent },
   { path:'apply', component:ApplyComponent },
-  { path:'**', component:OverviewComponent, redirectTo:'' }
+  { path:'**', redirectTo:'apply'}
 ];  
 
 @NgModule({
