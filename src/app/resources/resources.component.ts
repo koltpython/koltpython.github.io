@@ -21,7 +21,7 @@ const RESOURCES_DATA: Resource[] = [
   {
     no: 1,
     title: 'Course Information',
-    credit: 'Ahmet&İpek',
+    credit: 'Ahmet',
     url: 'https://docs.google.com/document/d/1nrqoCj7lOUvSF4vRolViWYRlRS1VZvmAHFfiLfN2mMU/'
   },
   {
