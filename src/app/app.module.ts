@@ -17,6 +17,8 @@ import { ContestsComponent } from './contests/contests.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { FooterComponent } from './footer/footer.component';
 import { ApplyComponent } from './apply/apply.component';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 
@@ -39,7 +41,8 @@ import { ApplyComponent } from './apply/apply.component';
     MatTableModule,
     MatTabsModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
