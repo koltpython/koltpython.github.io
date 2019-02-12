@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
 
-
 @Component({
   selector: 'app-lecture',
   templateUrl: './lecture.component.html',
@@ -35,8 +34,8 @@ const LECTURE_DATA: Lecture[] = [
     topic: 'Introduction',
     // Month is 0 based 0 -> Jan.
     date: new Date(2019, 1, 18),
-    slideCondensed: '',
-    slideFull: '',
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture1/lecture1-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture1/lecture1.pdf',
     description: 'Start of the semester, program introduction, python installations and brief introduction of python variables, types and I/O.',
     image: 'https://www.python.org/static/opengraph-icon-200x200.png'
   }
