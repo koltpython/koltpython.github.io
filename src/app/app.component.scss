@@ -1,7 +1,14 @@
 .main-content {
     position: relative;
     top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    // 64px for top + 160 px for bottom  
+    min-height: calc(100% - 224px);
     margin-bottom: 96px;
+    width: 80%;
+    padding: 16px;
+    background: aqua;
 }
 
 app-navbar {
@@ -15,6 +22,8 @@ app-navbar {
 @media (max-width: 720px) {
     .main-content {
       top: 128px;
+      // 128px for top + 224 px for bottom  
+      min-height: calc(100% - 352px);
       margin-bottom: 160px;
     }
 } 
