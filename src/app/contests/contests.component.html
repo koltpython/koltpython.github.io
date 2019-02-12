@@ -1,13 +1,13 @@
 <mat-card class="mat-elevation-z4">
   <mat-card-title>Contests</mat-card-title>
   <mat-card-content>
-    We will organize online and onsite contest to give students more chance to practice. There will be weekly online contests related to each week's topic. These are not mandatory, but we highly encourage you to look at the questions and try to solve them collaboratively with your friends. There may be surprize gifts to students at the top of the leader board :) 
+    We will organize online and onsite contests to give students more chance to practice. There will be weekly online contests related to each week's topic. These are not mandatory, but we highly encourage you to look at the questions and try to solve them collaboratively with your friends. There may be surprize gifts to students at the top of the leader board :) 
     <br>
     <br>
     Also we will have onsite contests in some Wednesdays. These contests will be held in CASE 133, and we will discuss about the questions after the contest.
     <br>
     <br>
-    Both online and onsite contest will be organized using <a href="https://www.hackerrank.com">HackerRank</a>, a free online platform for practice coding problems. You will have to create an account to join the contests. There are thousands of coding questions on the website, and we encourage interested students to spend time on this platform. 
+    Both online and onsite contests will be organized using <a href="https://www.hackerrank.com">HackerRank</a>, a free online platform for practice coding problems. You will have to create an account to join the contests. There are thousands of coding questions on the website, and we encourage interested students to spend time on this platform. 
     <img class="hackerrank-logo" src="https://hrcdn.net/hackerrank/assets/styleguide/logo_wordmark-13074b67abceb42ce8fd38bdeaac6926.svg"/>
   </mat-card-content>
   
@@ -36,13 +36,13 @@
     <!-- Start Column -->
     <ng-container matColumnDef="start">
       <th mat-header-cell *matHeaderCellDef> Starts at </th>
-      <td mat-cell *matCellDef="let element"> {{ element.startDate | date:'EEEE, MMMM d, h:mm a' }} </td>
+      <td mat-cell *matCellDef="let element"> {{ element.startDate | date:'MMM d, h:mm a' }} </td>
     </ng-container> 
 
     <!-- End Column -->
     <ng-container matColumnDef="end">
       <th mat-header-cell *matHeaderCellDef> Ends at </th>
-      <td mat-cell *matCellDef="let element"> {{ element.endDate | date:'EEEE, MMMM d, h:mm a' }} </td>
+      <td mat-cell *matCellDef="let element"> {{ element.endDate | date:'MMM d, h:mm a' }} </td>
     </ng-container>
 
     <!-- Leaderboard Column -->
@@ -80,13 +80,13 @@
     <!-- Start Column -->
     <ng-container matColumnDef="start">
       <th mat-header-cell *matHeaderCellDef> Starts at </th>
-      <td mat-cell *matCellDef="let element"> {{ element.startDate | date:'EEEE, MMMM d, h:mm a' }} </td>
+      <td mat-cell *matCellDef="let element"> {{ element.startDate | date:'MMM d, h:mm a' }} </td>
     </ng-container> 
 
     <!-- End Column -->
     <ng-container matColumnDef="end">
       <th mat-header-cell *matHeaderCellDef> Ends at </th>
-      <td mat-cell *matCellDef="let element"> {{ element.endDate | date:'EEEE, MMMM d, h:mm a' }} </td>
+      <td mat-cell *matCellDef="let element"> {{ element.endDate | date:'MMM d, h:mm a' }} </td>
     </ng-container>
 
 

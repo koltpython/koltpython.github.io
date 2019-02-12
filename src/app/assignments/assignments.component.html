@@ -31,17 +31,25 @@
         <a *ngIf="element.starterCode; else elseBlock" href="{{element.starterCode}}" target="_blank">Starter Code</a></td>
         <ng-template #elseBlock> None </ng-template>
     </ng-container>
+
+    <!-- Starter Code Column -->
+    <ng-container matColumnDef="review">
+      <th mat-header-cell *matHeaderCellDef> Review </th>
+      <td mat-cell *matCellDef="let element">
+        <a *ngIf="element.reviewLink; else elseBlock" href="{{element.reviewLink}}" target="_blank">Slide</a></td>
+        <ng-template #elseBlock> None </ng-template>
+    </ng-container>
   
     <!-- Release Column -->
     <ng-container matColumnDef="release">
       <th mat-header-cell *matHeaderCellDef> Released </th>
-      <td mat-cell *matCellDef="let element"> {{ element.releaseDate | date:'EEEE, MMMM d, h:mm a' }} </td>
+      <td mat-cell *matCellDef="let element"> {{ element.releaseDate | date:'MMM d, h:mm a' }} </td>
     </ng-container> 
 
     <!-- Due Column -->
     <ng-container matColumnDef="due">
       <th mat-header-cell *matHeaderCellDef> Due </th>
-      <td mat-cell *matCellDef="let element"> {{ element.dueDate | date:'EEEE, MMMM d, h:mm a' }} </td>
+      <td mat-cell *matCellDef="let element"> {{ element.dueDate | date:'MMM d, h:mm a' }} </td>
     </ng-container>
 
 
