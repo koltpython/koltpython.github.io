@@ -24,13 +24,7 @@
     <!-- Title Column -->
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef> Title </th>
-      <td mat-cell *matCellDef="let element"> <span class="bold-text"> {{ element.title }} </span> </td>
-    </ng-container>
-
-    <!-- Link Column -->
-    <ng-container matColumnDef="link">
-      <th mat-header-cell *matHeaderCellDef> Contest </th>
-      <td mat-cell *matCellDef="let element"> <a href="{{element.contestLink}}" target="_blank">Link</a></td>
+      <td mat-cell *matCellDef="let element"> <a href="{{element.contestLink}}" target="_blank"><span class="bold-text"> {{ element.title }} </span></a> </td>
     </ng-container>
 
     <!-- Start Column -->
@@ -68,13 +62,7 @@
     <!-- Title Column -->
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef> Title </th>
-      <td mat-cell *matCellDef="let element"> <span class="bold-text"> {{ element.title }} </span> </td>
-    </ng-container>
-
-    <!-- Link Column -->
-    <ng-container matColumnDef="link">
-      <th mat-header-cell *matHeaderCellDef> Contest </th>
-      <td mat-cell *matCellDef="let element"> <a href="{{element.contestLink}}" target="_blank">Link</a></td>
+      <td mat-cell *matCellDef="let element"> <a href="{{element.contestLink}}" target="_blank"><span class="bold-text"> {{ element.title }} </span></a> </td>
     </ng-container>
 
     <!-- Start Column -->

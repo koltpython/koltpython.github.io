@@ -9,7 +9,7 @@ export class ContestsComponent implements OnInit {
 
   onlineDataSource = ONLINE_CONTEST_DATA;
   onsiteDataSource = ONSITE_CONTEST_DATA;
-  columnsToDisplay = ['no', 'title', 'link', 'start', 'end', 'leaderboard'];
+  columnsToDisplay = ['no', 'title', 'start', 'end', 'leaderboard'];
 
   constructor() { }
 
