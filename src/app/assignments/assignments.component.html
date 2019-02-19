@@ -36,7 +36,9 @@
     <ng-container matColumnDef="review">
       <th mat-header-cell *matHeaderCellDef> Review </th>
       <td mat-cell *matCellDef="let element">
-        <a *ngIf="element.reviewLink; else elseBlock" href="{{element.reviewLink}}" target="_blank">Slide</a></td>
+        <div *ngIf="element.reviewCondensed; else elseBlock">
+          <a href="{{element.reviewFull}}" target="_blank">Full</a> / <a href="{{element.reviewCondensed}}" target="_blank">Condensed</a>
+        </div>
         <ng-template #elseBlock> None </ng-template>
     </ng-container>
   
