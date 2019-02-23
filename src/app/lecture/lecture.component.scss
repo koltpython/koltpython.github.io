@@ -22,9 +22,10 @@ tr.element-row:not(.expanded-row):active {
     border-bottom-width: 0;
 }
 
-.element-image.resize {
-    max-width: 10%;
-    height: auto;
+.element-image {
+    max-width: 40%; 
+    height: auto; 
+    width: auto; 
 }
 
 .element-detail {
