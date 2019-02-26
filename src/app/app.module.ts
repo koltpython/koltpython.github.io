@@ -18,6 +18,7 @@ import { ResourcesComponent } from './resources/resources.component';
 import { FooterComponent } from './footer/footer.component';
 import { ApplyComponent } from './apply/apply.component';
 import { MatCardModule } from '@angular/material/card';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 
 
@@ -32,7 +33,8 @@ import { MatCardModule } from '@angular/material/card';
     ContestsComponent,
     ResourcesComponent,
     FooterComponent,
-    ApplyComponent
+    ApplyComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,

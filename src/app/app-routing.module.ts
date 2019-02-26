@@ -6,6 +6,7 @@ import { AssignmentsComponent } from './assignments/assignments.component';
 import { ContestsComponent } from './contests/contests.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { ApplyComponent } from './apply/apply.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'apply', pathMatch: 'full'},
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path:'contests', component:ContestsComponent },
   { path:'resources', component:ResourcesComponent },
   { path:'apply', component:ApplyComponent },
+  { path:'feedback', component:FeedbackComponent }, 
   { path:'**', redirectTo:'apply'}
 ];  
 

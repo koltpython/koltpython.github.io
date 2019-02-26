@@ -1,4 +1,6 @@
 .main-content {
+    display: flex;
+    justify-content: center;
     position: relative;
     top: 64px;
     margin-left: auto;
@@ -7,7 +9,7 @@
     min-height: calc(100% - 224px);
     margin-bottom: 96px;
     width: 80%;
-    padding: 16px;
+    padding: 0;
 }
 
 app-navbar {
