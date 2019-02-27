@@ -39,10 +39,11 @@
       <td mat-cell *matCellDef="let element"> {{ element.endDate | date:'MMM d, h:mm a' }} </td>
     </ng-container>
 
-    <!-- Leaderboard Column -->
-    <ng-container matColumnDef="leaderboard">
-      <th mat-header-cell *matHeaderCellDef> Leaderboard </th>
-      <td mat-cell *matCellDef="let element"> <a href="{{element.contestLink}}/leaderboard" target="_blank">Link</a></td>
+    <!-- Solutions Column -->
+    <ng-container matColumnDef="solutions">
+      <th mat-header-cell *matHeaderCellDef> Solutions </th>
+      <td mat-cell *matCellDef="let element"> <a *ngIf="element.solutionsLink; else elseBlock" href="{{element.solutionsLink}}" target="_blank">Solutions</a></td>
+        <ng-template #elseBlock> Not Released </ng-template>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
@@ -77,11 +78,11 @@
       <td mat-cell *matCellDef="let element"> {{ element.endDate | date:'MMM d, h:mm a' }} </td>
     </ng-container>
 
-
-    <!-- Leaderboard Column -->
-    <ng-container matColumnDef="leaderboard">
-      <th mat-header-cell *matHeaderCellDef> Leaderboard </th>
-      <td mat-cell *matCellDef="let element"> <a href="{{element.contestLink}}/leaderboard" target="_blank">Link</a></td>
+    <!-- Solutions Column -->
+    <ng-container matColumnDef="solutions">
+      <th mat-header-cell *matHeaderCellDef> Solutions </th>
+      <td mat-cell *matCellDef="let element"> <a *ngIf="element.solutionsLink; else elseBlock" href="{{element.solutionsLink}}" target="_blank">Solutions</a></td>
+        <ng-template #elseBlock> Not Released </ng-template>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>

@@ -47,7 +47,13 @@ const RESOURCES_DATA: Resource[] = [
     title: 'Introduction to Command Line',
     credit: 'Django Girls',
     url: 'https://tutorial.djangogirls.org/en/intro_to_command_line/'
-  }
+  },
+  // {
+  //   no: 6,
+  //   title: '',
+  //   credit: 'Kenneth Reitz',
+  //   url: 'https://docs.python-guide.org/writing/style/'
+  // }
 ]
 
 
