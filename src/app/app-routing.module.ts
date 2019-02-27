@@ -9,14 +9,14 @@ import { ApplyComponent } from './apply/apply.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
-  { path:'', redirectTo:'apply', pathMatch: 'full'},
+  { path:'', redirectTo:'lecture', pathMatch: 'full'},
   { path:'lecture', component:LectureComponent },
   { path:'assignments', component:AssignmentsComponent },
   { path:'contests', component:ContestsComponent },
   { path:'resources', component:ResourcesComponent },
   { path:'apply', component:ApplyComponent },
   { path:'feedback', component:FeedbackComponent }, 
-  { path:'**', redirectTo:'apply'}
+  { path:'**', redirectTo:'lecture'}
 ];  
 
 @NgModule({

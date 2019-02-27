@@ -7,10 +7,10 @@
   <table mat-table
        [dataSource]="dataSource" class="mat-elevation-z8">
     <!-- No Column -->
-    <ng-container matColumnDef="no">
+    <!-- <ng-container matColumnDef="no">
       <th mat-header-cell *matHeaderCellDef> No. </th>
       <td mat-cell *matCellDef="let element"> <span class="bold-text"> {{ element.no }} </span> </td>
-    </ng-container>
+    </ng-container> -->
 
     <!-- Title Column -->
     <ng-container matColumnDef="title">
@@ -43,10 +43,10 @@
     </ng-container>
   
     <!-- Release Column -->
-    <ng-container matColumnDef="release">
+    <!-- <ng-container matColumnDef="release">
       <th mat-header-cell *matHeaderCellDef> Released </th>
       <td mat-cell *matCellDef="let element"> {{ element.releaseDate | date:'MMM d, h:mm a' }} </td>
-    </ng-container> 
+    </ng-container>  -->
 
     <!-- Due Column -->
     <ng-container matColumnDef="due">

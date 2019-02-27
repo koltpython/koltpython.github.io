@@ -1,23 +1,29 @@
 .main-content {
     display: flex;
+    flex: 1 0 auto;
     justify-content: center;
     position: relative;
     top: 64px;
     margin-left: auto;
     margin-right: auto;
-    // 64px for top + 160 px for bottom  
-    min-height: calc(100% - 224px);
-    margin-bottom: 96px;
+    // 64px for top + 82px for bottom
+    min-height: calc(100% - 146px);
     width: 80%;
     padding: 0;
+    margin-bottom: 82px;
 }
 
 app-navbar {
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
     z-index: 2;
+}
+
+app-footer {
+    width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -29,10 +35,23 @@ app-navbar {
 @media (max-width: 720px) {
     .main-content {
       top: 128px;
-      // 128px for top + 224 px for bottom  
-      min-height: calc(100% - 352px);
-      margin-bottom: 160px;
+      // 128px for top + 132 px for bottom  
+      min-height: calc(100% - 260px);
+      margin-bottom: 132px;
       width: 100%;
+    }
+
+    th.mat-header-cell:first-of-type {
+        padding-left: 12px;
+    }
+    th.mat-header-cell:last-of-type  {
+        padding-right: 12px;
+    }
+    td.mat-cell:first-of-type {
+        padding-left: 12px;
+    }
+    td.mat-cell:last-of-type {
+        padding-right: 12px;
     }
 } 
 

@@ -59,3 +59,9 @@ $koc-theme: mat-light-theme($koc-primary, $koc-accent, $koc-warn);
 @include angular-material-theme($koc-theme);
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+app-root{
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AssignmentsComponent implements OnInit {
 
   dataSource = ASSIGNMENT_DATA;
-  columnsToDisplay = ['no', 'title', 'handout', 'starter', 'review', 'release', 'due'];
+  columnsToDisplay = ['title', 'handout', 'starter', 'review', 'due'];
 
   constructor() { }
 

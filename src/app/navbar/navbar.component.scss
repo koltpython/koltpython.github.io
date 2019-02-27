@@ -3,6 +3,10 @@
   font-weight: bold;
 }
 
+.apply-button {
+  display: none;
+}
+
 .logo {
   height: 50px;
   margin: 0 4px 3px 0;
@@ -34,5 +38,10 @@
 
   .navbar-show-small {
     display: flex;
+  }
+
+  .second-row {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
