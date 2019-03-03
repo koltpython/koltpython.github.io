@@ -37,7 +37,7 @@
       <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
         <div class="element-detail"
             [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
-          <img src="{{ element.image }}" class="element-image"/>
+          <!--<img src="{{ element.image }}" class="element-image"/>-->
           <div class="element-description">
             {{element.description}}
           </div>

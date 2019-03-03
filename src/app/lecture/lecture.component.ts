@@ -37,15 +37,23 @@ const LECTURE_DATA: Lecture[] = [
     slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture1/lecture1-condensed.pdf',
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture1/lecture1.pdf',
     description: 'Start of the semester, program introduction, python installations and brief introduction of python variables, types and I/O.',
-    image: 'https://www.python.org/static/opengraph-icon-200x200.png'
+    image: ''
   },
   {
     topic: 'Basic Operators & Branching',
     date: new Date(2019, 1, 25),
     slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2-condensed.pdf',
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2.pdf',
-    description: 'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else) Brief introduction to strings.',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9zkKK7vv32J9HI-vrOXwPKKngpPk-vcQMhZZAVolNfhJhl4apzw'
+    description: 'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else).',
+    image: ''
+  },
+  {
+    topic: 'Lists, Strings & Loops',
+    date: new Date(2019, 2, 4),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
+    description: 'Introduction to lists and basic list operations, slicing lists and strings. Usage of \'in\' operator, while and for loops. Break, continue and pass statements.',
+    image: ''
   }
 ];
 

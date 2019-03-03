@@ -27,6 +27,16 @@ const ASSIGNMENT_DATA: Assignment[] = [
     starterCode: null,
     releaseDate: new Date(2019, 1, 18, 19, 0),
     dueDate: new Date(2019, 1, 25, 17, 30)  
+  },
+  {
+    no: 1,
+    title: 'Connect Four',
+    handoutLink: 'https://github.com/koltpython/python-assignments/blob/master/Assignment1/Assignment1.md',
+    reviewCondensed: '',
+    reviewFull: '',
+    starterCode: 'https://github.com/koltpython/python-assignments/raw/master/Assignment1/connect_four.py',
+    releaseDate: new Date(2019, 2, 3, 11, 0),
+    dueDate: new Date(2019, 2, 11, 17, 30)
   }
 ]
 
