@@ -48,12 +48,30 @@ const RESOURCES_DATA: Resource[] = [
     credit: 'Django Girls',
     url: 'https://tutorial.djangogirls.org/en/intro_to_command_line/'
   },
-  // {
-  //   no: 6,
-  //   title: '',
-  //   credit: 'Kenneth Reitz',
-  //   url: 'https://docs.python-guide.org/writing/style/'
-  // }
+  {
+    no: 6,
+    title: 'The Python Language Reference',
+    credit: 'Python Software Foundation',
+    url: 'https://docs.python.org/3/reference/'
+  },
+  {
+    no: 7,
+    title: 'The Python Standard Library',
+    credit: 'Python Software Foundation',
+    url: 'https://docs.python.org/3/library/'
+  },
+  {
+    no: 8,
+    title: 'PEP 8: Style Guide for Python Code',
+    credit: 'Guido van Rossum',
+    url: 'https://www.python.org/dev/peps/pep-0008/'
+  },
+  {
+    no: 9,
+    title: 'Awesome Python frameworks, libraries, software and resources',
+    credit: 'Vinta Chen',
+    url: 'https://awesome-python.com/'
+  }
 ]
 
 

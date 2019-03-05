@@ -32,8 +32,8 @@ const ASSIGNMENT_DATA: Assignment[] = [
     no: 1,
     title: 'Connect Four',
     handoutLink: 'https://github.com/koltpython/python-assignments/blob/master/Assignment1/Assignment1.md',
-    reviewCondensed: '',
-    reviewFull: '',
+    reviewCondensed: 'https://github.com/koltpython/python-slides/raw/master/Review1/review1-condensed.pdf',
+    reviewFull: 'https://github.com/koltpython/python-slides/raw/master/Review1/review1.pdf',
     starterCode: 'https://github.com/koltpython/python-assignments/raw/master/Assignment1/connect_four.py',
     releaseDate: new Date(2019, 2, 3, 11, 0),
     dueDate: new Date(2019, 2, 11, 17, 30)
