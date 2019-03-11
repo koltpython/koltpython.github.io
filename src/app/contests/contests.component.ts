@@ -39,9 +39,17 @@ const ONLINE_CONTEST_DATA: Contest[] = [
     no: 3,
     title: 'Online Contest 3',
     contestLink: 'https://www.hackerrank.com/kolt-python-spring2019-online-3',
-    solutionsLink: '',
+    solutionsLink: 'https://github.com/koltpython/python-contests/tree/master/OnlineContests/3',
     startDate: new Date(2019, 2, 4, 19, 0),
     endDate: new Date(2019, 2, 11, 17, 30)
+  },
+  {
+    no: 4,
+    title: 'Online Contest 4',
+    contestLink: 'https://www.hackerrank.com/kolt-python-spring2019-online-4',
+    solutionsLink: '',
+    startDate: new Date(2019, 2, 11, 19, 0),
+    endDate: new Date(2019, 2, 18, 17, 30)
   }
 ];
 
@@ -53,6 +61,14 @@ const ONSITE_CONTEST_DATA: Contest[] = [
     solutionsLink: 'https://github.com/koltpython/python-contests/tree/master/OnsiteContests/1',
     startDate: new Date(2019, 1, 27, 17, 30),
     endDate: new Date(2019, 1, 27, 18, 20)
+  },
+  {
+    no: 1,
+    title: 'Onsite Contest 2',
+    contestLink: 'https://www.hackerrank.com/kolt-python-spring2019-onsite-2',
+    solutionsLink: '',
+    startDate: new Date(2019, 2, 13, 17, 30),
+    endDate: new Date(2019, 2, 13, 18, 20)
   }
 ];
 

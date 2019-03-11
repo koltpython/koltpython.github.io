@@ -54,6 +54,14 @@ const LECTURE_DATA: Lecture[] = [
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
     description: 'Introduction to lists and basic list operations, slicing lists and strings. Usage of \'in\' operator, while and for loops. Break, continue and pass statements.',
     image: ''
+  },
+  {
+    topic: 'Functions',
+    date: new Date(2019, 2, 11),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4.pdf',
+    description: 'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables. Introduction to lambda functions.',
+    image: ''
   }
 ];
 
