@@ -3,29 +3,31 @@
   <mat-card-content>
     These resources are about program logistics and documents we find helpful to explain related topics.
   </mat-card-content>
-  
-  <table mat-table
-       [dataSource]="resourcesDataSource" class="mat-elevation-z8">
+
+  <table mat-table [dataSource]="resourcesDataSource" class="mat-elevation-z8">
     <!-- No Column -->
     <ng-container matColumnDef="no">
-      <th mat-header-cell *matHeaderCellDef> No. </th>
-      <td mat-cell *matCellDef="let element"> <span class="bold-text"> {{ element.no }} </span> </td>
+      <th mat-header-cell *matHeaderCellDef>No.</th>
+      <td mat-cell *matCellDef="let element">
+        <span class="bold-text"> {{ element.no }} </span>
+      </td>
     </ng-container>
 
     <!-- Title Column -->
     <ng-container matColumnDef="title">
-      <th mat-header-cell *matHeaderCellDef> Title </th>
-      <td mat-cell *matCellDef="let element"> <a href="{{element.url}}" target="_blank">{{ element.title }}</a></td>
+      <th mat-header-cell *matHeaderCellDef>Title</th>
+      <td mat-cell *matCellDef="let element">
+        <a href="{{ element.url }}" target="_blank">{{ element.title }}</a>
+      </td>
     </ng-container>
 
     <!-- Credit Column -->
     <ng-container matColumnDef="credit">
-      <th mat-header-cell *matHeaderCellDef> Credit </th>
-      <td mat-cell *matCellDef="let element"> {{ element.credit }} </td>
+      <th mat-header-cell *matHeaderCellDef>Credit</th>
+      <td mat-cell *matCellDef="let element">{{ element.credit }}</td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
-    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
-</table>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay"></tr>
+  </table>
 </mat-card>
-

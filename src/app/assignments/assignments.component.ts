@@ -6,15 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./assignments.component.scss']
 })
 export class AssignmentsComponent implements OnInit {
-
   dataSource = ASSIGNMENT_DATA;
   columnsToDisplay = ['title', 'handout', 'starter', 'review', 'due'];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
 
 const ASSIGNMENT_DATA: Assignment[] = [
@@ -26,7 +23,7 @@ const ASSIGNMENT_DATA: Assignment[] = [
     reviewFull: 'https://github.com/koltpython/python-slides/raw/master/Review0/review0.pdf',
     starterCode: null,
     releaseDate: new Date(2019, 1, 18, 19, 0),
-    dueDate: new Date(2019, 1, 25, 17, 30)  
+    dueDate: new Date(2019, 1, 25, 17, 30)
   },
   {
     no: 1,
@@ -38,15 +35,15 @@ const ASSIGNMENT_DATA: Assignment[] = [
     releaseDate: new Date(2019, 2, 3, 11, 0),
     dueDate: new Date(2019, 2, 11, 17, 30)
   }
-]
+];
 
 export interface Assignment {
-  no: number,
-  title: String,
-  handoutLink: String,
-  reviewCondensed: String,
-  reviewFull: String,
-  starterCode: String,
-  releaseDate: Date,
-  dueDate: Date
+  no: number;
+  title: String;
+  handoutLink: String;
+  reviewCondensed: String;
+  reviewFull: String;
+  starterCode: String;
+  releaseDate: Date;
+  dueDate: Date;
 }

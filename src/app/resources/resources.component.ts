@@ -6,15 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resources.component.scss']
 })
 export class ResourcesComponent implements OnInit {
-
   resourcesDataSource = RESOURCES_DATA;
   columnsToDisplay = ['no', 'title', 'credit'];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
 
 const RESOURCES_DATA: Resource[] = [
@@ -71,13 +68,24 @@ const RESOURCES_DATA: Resource[] = [
     title: 'Awesome Python frameworks, libraries, software and resources',
     credit: 'Vinta Chen',
     url: 'https://awesome-python.com/'
+  },
+  {
+    no: 10,
+    title: 'Python Tutor',
+    credit: 'Phillip Guo',
+    url: 'http://pythontutor.com/visualize.html#mode=edit'
+  },
+  {
+    no: 11,
+    title: 'Ready for Readable Code?',
+    credit: 'John Papa',
+    url: 'https://www.youtube.com/watch?v=56mETnrByBM'
   }
-]
-
+];
 
 export interface Resource {
-  no: number,
-  title: String,
-  credit: String,
-  url: String
+  no: number;
+  title: String;
+  credit: String;
+  url: String;
 }

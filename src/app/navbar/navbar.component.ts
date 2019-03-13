@@ -6,29 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
   sections = [
     {
-      name: "Lecture",
-      link: "lecture"
+      name: 'Lecture',
+      link: 'lecture'
     },
     {
-      name: "Assignments",
-      link: "assignments"
+      name: 'Assignments',
+      link: 'assignments'
     },
     {
-      name: "Contests",
-      link: "contests"
+      name: 'Contests',
+      link: 'contests'
     },
     {
-      name: "Resources",
-      link: "resources"
+      name: 'Resources',
+      link: 'resources'
     }
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

@@ -1,37 +1,37 @@
 table {
-    width: 100%;
+  width: 100%;
 }
 
 .topic-text {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 tr.detail-row {
-    height: 0;
+  height: 0;
 }
-  
+
 tr.element-row:not(.expanded-row):hover {
-    background: #f5f5f5;
+  background: #f5f5f5;
 }
 
 tr.element-row:not(.expanded-row):active {
-    background: #efefef;
+  background: #efefef;
 }
 
 .element-row td {
-    border-bottom-width: 0;
+  border-bottom-width: 0;
 }
 
 .element-image {
-    max-width: 40%; 
-    height: auto; 
-    width: auto; 
+  max-width: 40%;
+  height: auto;
+  width: auto;
 }
 
 .element-detail {
-    overflow: hidden;
-    display: flex;
+  overflow: hidden;
+  display: flex;
 }
 .element-description {
-    padding: 16px;
+  padding: 16px;
 }

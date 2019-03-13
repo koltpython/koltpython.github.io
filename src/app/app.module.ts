@@ -20,9 +20,6 @@ import { ApplyComponent } from './apply/apply.component';
 import { MatCardModule } from '@angular/material/card';
 import { FeedbackComponent } from './feedback/feedback.component';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,4 +46,4 @@ import { FeedbackComponent } from './feedback/feedback.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
