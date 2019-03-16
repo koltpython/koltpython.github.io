@@ -80,6 +80,12 @@ const RESOURCES_DATA: Resource[] = [
     title: 'Ready for Readable Code?',
     credit: 'John Papa',
     url: 'https://www.youtube.com/watch?v=56mETnrByBM'
+  },
+  {
+    no: 12,
+    title: 'Facts and Myths about Python names and values',
+    credit: 'Ned Batchelder',
+    url: 'https://www.youtube.com/watch?v=_AEJHKGk9ns'
   }
 ];
 

@@ -62,12 +62,12 @@ const LECTURE_DATA: Lecture[] = [
     image: ''
   },
   {
-    topic: 'Functions',
+    topic: 'Containers, Aliasing & Mutability',
     date: new Date(2019, 2, 11),
-    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4-condensed.pdf',
-    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4.pdf',
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5.pdf',
     description:
-      'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables. Introduction to lambda functions.',
+      'More detailed look into Python data and memory model. Discussion about aliasing and cloning. List, Tuple, Set and Dictionary types and differences between them. Comparison between reassigning and mutation.',
     image: ''
   }
 ];
