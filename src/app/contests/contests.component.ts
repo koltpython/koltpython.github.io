@@ -44,7 +44,7 @@ const ONLINE_CONTEST_DATA: Contest[] = [
     no: 4,
     title: 'Online Contest 4',
     contestLink: 'https://www.hackerrank.com/kolt-python-spring2019-online-4',
-    solutionsLink: '',
+    solutionsLink: 'https://github.com/koltpython/python-contests/tree/master/OnlineContests/4',
     startDate: new Date(2019, 2, 11, 19, 0),
     endDate: new Date(2019, 2, 18, 17, 30)
   },
