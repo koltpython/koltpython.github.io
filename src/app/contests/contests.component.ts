@@ -79,7 +79,7 @@ const ONSITE_CONTEST_DATA: Contest[] = [
     no: 3,
     title: 'Onsite Contest 3',
     contestLink: 'https://www.hackerrank.com/kolt-python-spring2019-onsite-3',
-    solutionsLink: '',
+    solutionsLink: 'https://github.com/koltpython/python-contests/tree/master/OnsiteContests/3',
     startDate: new Date(2019, 2, 20, 17, 30),
     endDate: new Date(2019, 2, 20, 18, 20)
   }
