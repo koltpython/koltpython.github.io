@@ -55,6 +55,14 @@ const ONLINE_CONTEST_DATA: Contest[] = [
     solutionsLink: '',
     startDate: new Date(2019, 2, 18, 19, 0),
     endDate: new Date(2019, 2, 25, 17, 30)
+  },
+  {
+    no: 6,
+    title: 'Online Contest 6',
+    contestLink: 'https://www.hackerrank.com/kolt-python-spring2019-online-6',
+    solutionsLink: '',
+    startDate: new Date(2019, 2, 25, 19, 0),
+    endDate: new Date(2019, 3, 1, 17, 30)
   }
 ];
 

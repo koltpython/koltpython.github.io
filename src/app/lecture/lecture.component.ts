@@ -63,11 +63,20 @@ const LECTURE_DATA: Lecture[] = [
   },
   {
     topic: 'Containers, Aliasing & Mutability',
-    date: new Date(2019, 2, 11),
+    date: new Date(2019, 2, 18),
     slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5-condensed.pdf',
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5.pdf',
     description:
       'More detailed look into Python data and memory model. Discussion about aliasing and cloning. List, Tuple, Set and Dictionary types and differences between them. Comparison between reassigning and mutation.',
+    image: ''
+  },
+  {
+    topic: 'File I/O, Testing & Debugging',
+    date: new Date(2019, 2, 25),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6.pdf',
+    description:
+      'Standard file input and output in Python. Discussion about Exceptions and how to handle them. Debugging tool in VS Code.',
     image: ''
   }
 ];

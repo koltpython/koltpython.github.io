@@ -34,6 +34,16 @@ const ASSIGNMENT_DATA: Assignment[] = [
     starterCode: 'https://github.com/koltpython/python-assignments/raw/master/Assignment1/connect_four.py',
     releaseDate: new Date(2019, 2, 3, 11, 0),
     dueDate: new Date(2019, 2, 11, 17, 30)
+  },
+  {
+    no: 2,
+    title: 'Classifier',
+    handoutLink: 'https://github.com/koltpython/python-assignments/blob/master/Assignment2/assignment2.md',
+    reviewCondensed: '',
+    reviewFull: '',
+    starterCode: 'https://github.com/koltpython/python-assignments/raw/master/Assignment2/assignment2.zip',
+    releaseDate: new Date(2019, 2, 24, 20, 0),
+    dueDate: new Date(2019, 3, 3, 23, 59)
   }
 ];
 
