@@ -78,6 +78,15 @@ const LECTURE_DATA: Lecture[] = [
     description:
       'Standard file input and output in Python. Discussion about Exceptions and how to handle them. Debugging tool in VS Code.',
     image: ''
+  },
+  {
+    topic: 'Error/Exception Handling, Object Oriented Programming',
+    date: new Date(2019, 3, 1),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7_condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7.pdf',
+    description:
+      'Error and exception handling in python with try except finally blocks. Discussion about classes and Object Oriented Programming, brief introduction to inheritance and method overloading.',
+    image: ''
   }
 ];
 
