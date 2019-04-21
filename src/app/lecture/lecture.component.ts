@@ -87,6 +87,15 @@ const LECTURE_DATA: Lecture[] = [
     description:
       'Error and exception handling in python with try except finally blocks. Discussion about classes and Object Oriented Programming, brief introduction to inheritance and method overloading.',
     image: ''
+  },
+  {
+    topic: 'Third Party Packages',
+    date: new Date(2019, 3, 22),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture8/lecture8_condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture8/lecture8.pdf',
+    description:
+      'Installing and using third party packages using pip. Example solution to a real life problem. Announcement of final projects.',
+    image: ''
   }
 ];
 
