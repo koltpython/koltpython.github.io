@@ -8,16 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   sections = [
     {
-      name: 'Lecture',
-      link: 'lecture'
+      name: 'Lectures',
+      link: 'lectures'
     },
     {
       name: 'Assignments',
       link: 'assignments'
-    },
-    {
-      name: 'Contests',
-      link: 'contests'
     },
     {
       name: 'Resources',

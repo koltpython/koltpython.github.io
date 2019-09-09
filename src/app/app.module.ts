@@ -10,7 +10,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LectureComponent } from './lecture/lecture.component';
 import { OverviewComponent } from './overview/overview.component';
 import { AssignmentsComponent } from './assignments/assignments.component';
-import { ContestsComponent } from './contests/contests.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { FooterComponent } from './footer/footer.component';
 import { ApplyComponent } from './apply/apply.component';
@@ -24,7 +23,6 @@ import { MaterialModule } from './material/material.module';
     LectureComponent,
     OverviewComponent,
     AssignmentsComponent,
-    ContestsComponent,
     ResourcesComponent,
     FooterComponent,
     ApplyComponent,
