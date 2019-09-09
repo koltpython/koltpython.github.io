@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'resources', component: ResourcesComponent },
   { path: 'apply', component: ApplyComponent },
   { path: 'feedback', component: FeedbackComponent },
+  { path: 'alumni', loadChildren: () => import('./alumni/alumni.module').then(m => m.AlumniModule) },
   { path: '**', redirectTo: 'lectures' }
 ];
 
