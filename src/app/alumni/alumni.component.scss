@@ -1,0 +1,25 @@
+.teamMembersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  p {
+    margin: 0;
+  }
+  :not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.alumniContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  p {
+    margin: 0;
+  }
+  :not(:last-child) {
+    margin-right: 8px;
+  }
+}

@@ -1,1 +1,17 @@
 <p>This program is created and maintained by Koç University Students.</p>
+
+<h1>Team Members</h1>
+<div *ngFor="let term of teamMembers">
+  <h2>{{ term.term }} {{ term.year }}</h2>
+  <div class="teamMembersContainer">
+    <p *ngFor="let member of term.teamMembers">{{ member.name }} <{{ member.kuId }}></p>
+  </div>
+</div>
+
+<h1>Alumni</h1>
+<div *ngFor="let term of alumni">
+  <h2>{{ term.term }} {{ term.year }}</h2>
+  <div class="alumniContainer">
+    <p *ngFor="let member of term.alumni">{{ member.name }} <{{ member.kuId }}></p>
+  </div>
+</div>
