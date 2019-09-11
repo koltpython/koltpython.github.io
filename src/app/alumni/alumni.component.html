@@ -1,10 +1,24 @@
-<p>This program is created and maintained by Koç University Students.</p>
+<div class="description">
+  <p>
+    KOLT Python program is founded by Ahmet Uysal in collaboration with
+    <a href="https://kolt.ku.edu.tr">Koç University Office of Learning and Teaching</a> in September 2018 to address
+    students' raising demand for programming. The program is designed for students with no programming experience and
+    assumes no technical background. We prioritize practical use cases of programming over more theoretical aspects and
+    encourage students to leverage their programming skills in their field or interests.
+  </p>
+  <p>
+    In Spring 2019, we accepted our first 20 students from various academic principles. The program is ever-growing and
+    improving since then thanks to our passionate team members and feedback from our students.
+  </p>
+</div>
 
 <h1>Team Members</h1>
 <div *ngFor="let term of teamMembers">
   <h2>{{ term.term }} {{ term.year }}</h2>
-  <div class="teamMembersContainer">
-    <p *ngFor="let member of term.teamMembers">{{ member.name }} <{{ member.kuId }}></p>
+  <div class="alumniContainer">
+    <p *ngFor="let member of term.teamMembers">
+      {{ member.name }}<span class="kuId"><{{ member.kuId }}></span>
+    </p>
   </div>
 </div>
 
@@ -12,6 +26,8 @@
 <div *ngFor="let term of alumni">
   <h2>{{ term.term }} {{ term.year }}</h2>
   <div class="alumniContainer">
-    <p *ngFor="let member of term.alumni">{{ member.name }} <{{ member.kuId }}></p>
+    <p *ngFor="let member of term.alumni">
+      {{ member.name }}<span class="kuId"><{{ member.kuId }}></span>
+    </p>
   </div>
 </div>
