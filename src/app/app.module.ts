@@ -12,7 +12,6 @@ import { OverviewComponent } from './overview/overview.component';
 import { AssignmentsComponent } from './assignments/assignments.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { FooterComponent } from './footer/footer.component';
-import { ApplyComponent } from './apply/apply.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { MaterialModule } from './material/material.module';
 
@@ -25,7 +24,6 @@ import { MaterialModule } from './material/material.module';
     AssignmentsComponent,
     ResourcesComponent,
     FooterComponent,
-    ApplyComponent,
     FeedbackComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
