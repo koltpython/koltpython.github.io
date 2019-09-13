@@ -1,1 +1,20 @@
-<p>team works!</p>
+<h2>Team</h2>
+<div class="teamContainer">
+  <div *ngFor="let member of team" class="col-6 col-md-4 col-lg-3">
+    <div class="padding">
+      <img [src]="member.image" class="image" />
+      <h4 class="name">{{ member.name }}</h4>
+      <p class="title">{{ member.title }}</p>
+    </div>
+  </div>
+</div>
+<h2>Advisors</h2>
+<div class="teamContainer">
+  <div *ngFor="let advisor of advisors" class="col-6 col-md-4 col-lg-3">
+    <div class="padding">
+      <img [src]="advisor.image" class="image" />
+      <h4 class="name">{{ advisor.name }}</h4>
+      <p class="title">{{ advisor.title }}</p>
+    </div>
+  </div>
+</div>
