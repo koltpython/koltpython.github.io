@@ -8,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { LectureComponent } from './lecture/lecture.component';
-import { OverviewComponent } from './overview/overview.component';
 import { AssignmentsComponent } from './assignments/assignments.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { FooterComponent } from './footer/footer.component';
@@ -20,14 +19,12 @@ import { MaterialModule } from './material/material.module';
     AppComponent,
     NavbarComponent,
     LectureComponent,
-    OverviewComponent,
     AssignmentsComponent,
     ResourcesComponent,
     FooterComponent,
     FeedbackComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

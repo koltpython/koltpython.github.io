@@ -37,7 +37,7 @@ export class TeamComponent implements OnInit {
     {
       name: 'Hasan Can Aslan',
       image: '../assets/images/hasancan.jpg',
-      title: 'Junior CE Student'
+      title: 'Junior CE & ECON Student'
     }
   ];
 
