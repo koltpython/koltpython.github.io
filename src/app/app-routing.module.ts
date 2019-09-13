@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'apply', loadChildren: () => import('./apply/apply.module').then(m => m.ApplyModule) },
   { path: 'feedback', component: FeedbackComponent },
   { path: 'alumni', loadChildren: () => import('./alumni/alumni.module').then(m => m.AlumniModule) },
+  { path: 'team', loadChildren: () => import('./team/team.module').then(m => m.TeamModule) },
   { path: '**', redirectTo: 'lectures' }
 ];
 
