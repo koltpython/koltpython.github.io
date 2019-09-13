@@ -8,8 +8,8 @@
     <!-- No Column -->
     <ng-container matColumnDef="no">
       <th mat-header-cell *matHeaderCellDef>No.</th>
-      <td mat-cell *matCellDef="let element">
-        <span class="bold-text"> {{ element.no }} </span>
+      <td mat-cell *matCellDef="let i = index">
+        <span class="bold-text"> {{ i + 1 }} </span>
       </td>
     </ng-container>
 
