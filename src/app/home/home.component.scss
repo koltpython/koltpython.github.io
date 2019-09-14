@@ -1,0 +1,14 @@
+.description {
+  font-size: 1.2em;
+  max-width: 800px;
+}
+
+.actions {
+  margin-top: 16px;
+}
+
+@media (min-width: 720px) {
+  .homeContainer {
+    display: flex;
+  }
+}

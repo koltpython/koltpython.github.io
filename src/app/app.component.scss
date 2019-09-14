@@ -41,8 +41,9 @@ app-footer {
     // 128px for top + 132 px for bottom
     min-height: calc(100% - 260px);
     margin-bottom: 132px;
-    padding: 0 16px;
-    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: calc(100% - 32px);
   }
 
   th.mat-header-cell:first-of-type {
