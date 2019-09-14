@@ -6,7 +6,7 @@ import { ResourcesComponent } from './resources/resources.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'lectures', pathMatch: 'full' },
+  { path: '', pathMatch: 'full', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
   { path: 'lectures', component: LectureComponent },
   { path: 'assignments', component: AssignmentsComponent },
   { path: 'resources', component: ResourcesComponent },
