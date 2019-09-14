@@ -86,6 +86,8 @@ THE SOFTWARE.
 
 @angular/material/card
 
+@angular/material/icon
+
 @angular/material/table
 
 @angular/material/toolbar
