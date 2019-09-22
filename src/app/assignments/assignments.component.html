@@ -7,12 +7,6 @@
   </mat-card-content>
 
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-    <!-- No Column -->
-    <!-- <ng-container matColumnDef="no">
-      <th mat-header-cell *matHeaderCellDef> No. </th>
-      <td mat-cell *matCellDef="let element"> <span class="bold-text"> {{ element.no }} </span> </td>
-    </ng-container> -->
-
     <!-- Title Column -->
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef>Title</th>
@@ -21,19 +15,10 @@
       </td>
     </ng-container>
 
-    <!-- Handout Column -->
-    <ng-container matColumnDef="handout">
-      <th mat-header-cell *matHeaderCellDef>Handout</th>
-      <td mat-cell *matCellDef="let element"><a href="{{ element.handoutLink }}" target="_blank">Handout</a></td>
-    </ng-container>
-
-    <!-- Starter Code Column -->
-    <ng-container matColumnDef="starter">
-      <th mat-header-cell *matHeaderCellDef>Starter Code</th>
-      <td mat-cell *matCellDef="let element">
-        <a *ngIf="element.starterCode; else elseBlock" href="{{ element.starterCode }}" target="_blank">Starter Code</a>
-      </td>
-      <ng-template #elseBlock> None </ng-template>
+    <!-- Replit Column -->
+    <ng-container matColumnDef="replit">
+      <th mat-header-cell *matHeaderCellDef>Repl.it Link</th>
+      <td mat-cell *matCellDef="let element"><a href="{{ element.replitLink }}" target="_blank">Repl.it</a></td>
     </ng-container>
 
     <!-- Starter Code Column -->
