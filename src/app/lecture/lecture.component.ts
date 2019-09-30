@@ -33,16 +33,16 @@ const LECTURE_DATA: Lecture[] = [
     description:
       'Start of the semester, program introduction, Python installations and brief introduction of Python variables, types and I/O.',
     image: ''
+  },
+  {
+    topic: 'Basic Operators & Branching',
+    date: new Date(2019, 8, 30),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2.pdf',
+    description:
+      'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else).',
+    image: ''
   }
-  // {
-  //   topic: 'Basic Operators & Branching',
-  //   date: new Date(2019, 1, 25),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2.pdf',
-  //   description:
-  //     'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else).',
-  //   image: ''
-  // },
   // {
   //   topic: 'Lists, Strings & Loops',
   //   date: new Date(2019, 2, 4),
