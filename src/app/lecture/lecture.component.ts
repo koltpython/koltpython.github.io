@@ -42,16 +42,16 @@ const LECTURE_DATA: Lecture[] = [
     description:
       'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else).',
     image: ''
+  },
+  {
+    topic: 'Strings, Loops & Lists',
+    date: new Date(2019, 9, 7),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
+    description:
+      "Introduction to lists and basic list operations, slicing lists and strings. Usage of 'in' operator, while and for loops. Break, continue and pass statements.",
+    image: ''
   }
-  // {
-  //   topic: 'Lists, Strings & Loops',
-  //   date: new Date(2019, 2, 4),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
-  //   description:
-  //     "Introduction to lists and basic list operations, slicing lists and strings. Usage of 'in' operator, while and for loops. Break, continue and pass statements.",
-  //   image: ''
-  // },
   // {
   //   topic: 'Functions',
   //   date: new Date(2019, 2, 11),
