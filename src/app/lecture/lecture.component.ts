@@ -44,23 +44,22 @@ const LECTURE_DATA: Lecture[] = [
     image: ''
   },
   {
-    topic: 'Strings, Loops & Lists',
+    topic: 'Strings, While Loops & Lists',
     date: new Date(2019, 9, 7),
     slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3-condensed.pdf',
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
+    description: 'Introduction to lists and basic list operations, slicing lists, strings and while loops.',
+    image: ''
+  },
+  {
+    topic: 'Lists (Cont.), For Loops & Functions',
+    date: new Date(2019, 9, 7),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4.pdf',
     description:
-      "Introduction to lists and basic list operations, slicing lists and strings. Usage of 'in' operator, while and for loops. Break, continue and pass statements.",
+      'Lists continued. Discussion about ranges, for loops, break and continue statements. Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables.',
     image: ''
   }
-  // {
-  //   topic: 'Functions',
-  //   date: new Date(2019, 2, 11),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4.pdf',
-  //   description:
-  //     'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables. Introduction to lambda functions.',
-  //   image: ''
-  // },
   // {
   //   topic: 'Containers, Aliasing & Mutability',
   //   date: new Date(2019, 2, 18),
