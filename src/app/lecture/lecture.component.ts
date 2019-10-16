@@ -44,7 +44,7 @@ const LECTURE_DATA: Lecture[] = [
     image: ''
   },
   {
-    topic: 'Strings, While Loops & Lists',
+    topic: 'Strings, While Loops & Introduction to Lists',
     date: new Date(2019, 9, 7),
     slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3-condensed.pdf',
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
@@ -52,50 +52,81 @@ const LECTURE_DATA: Lecture[] = [
     image: ''
   },
   {
-    topic: 'Lists (Cont.), For Loops & Functions',
-    date: new Date(2019, 9, 7),
+    topic: 'Lists Continued, For Loops',
+    date: new Date(2019, 9, 14),
     slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4-condensed.pdf',
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4.pdf',
     description:
-      'Lists continued. Discussion about ranges, for loops, break and continue statements. Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables.',
+      'Lists continued. More detailed look into list methods and ways to mutate lists. Discussion about ranges, for loops, break and continue statements.',
+    image: ''
+  },
+  {
+    topic: 'Functions',
+    date: new Date(2019, 9, 21),
+    slideCondensed: null,
+    slideFull: null,
+    description:
+      'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables.',
+    image: ''
+  },
+  {
+    topic: 'Holiday (Republic Day)',
+    date: new Date(2019, 9, 28),
+    slideCondensed: null,
+    slideFull: null,
+    description: '',
+    image: ''
+  },
+  {
+    topic: 'Containers, Aliasing & Mutability',
+    date: new Date(2019, 10, 4),
+    slideCondensed: null,
+    slideFull: null,
+    description:
+      'More detailed look into Python data and memory model. Discussion about aliasing and cloning. List, Tuple, Set and Dictionary types and differences between them. Comparison between reassigning and mutation.',
+    image: ''
+  },
+  {
+    topic: 'Error & Exception Handling, File Input and Output',
+    date: new Date(2019, 10, 11),
+    slideCondensed: null,
+    slideFull: null,
+    description: 'Standard file input and output in Python. Discussion about Exceptions and how to handle them.',
+    image: ''
+  },
+  {
+    topic: 'Using Third Party Packages',
+    date: new Date(2019, 10, 18),
+    slideCondensed: null,
+    slideFull: null,
+    description:
+      'Python Package Index(PyPI) and Package Installer for Python (pip). Installing and using third party packages using pip. Example solution to a real life problem.',
+    image: ''
+  },
+  {
+    topic: 'TBD',
+    date: new Date(2019, 10, 25),
+    slideFull: null,
+    slideCondensed: null,
+    description: '',
+    image: ''
+  },
+  {
+    topic: 'TBD',
+    date: new Date(2019, 11, 2),
+    slideFull: null,
+    slideCondensed: null,
+    description: '',
+    image: ''
+  },
+  {
+    topic: 'TBD',
+    date: new Date(2019, 11, 9),
+    slideFull: null,
+    slideCondensed: null,
+    description: '',
     image: ''
   }
-  // {
-  //   topic: 'Containers, Aliasing & Mutability',
-  //   date: new Date(2019, 2, 18),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5.pdf',
-  //   description:
-  //     'More detailed look into Python data and memory model. Discussion about aliasing and cloning. List, Tuple, Set and Dictionary types and differences between them. Comparison between reassigning and mutation.',
-  //   image: ''
-  // },
-  // {
-  //   topic: 'File I/O, Testing & Debugging',
-  //   date: new Date(2019, 2, 25),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6.pdf',
-  //   description:
-  //     'Standard file input and output in Python. Discussion about Exceptions and how to handle them. Debugging tool in VS Code.',
-  //   image: ''
-  // },
-  // {
-  //   topic: 'Error/Exception Handling, Object Oriented Programming',
-  //   date: new Date(2019, 3, 1),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7_condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7.pdf',
-  //   description:
-  //     'Error and exception handling in python with try except finally blocks. Discussion about classes and Object Oriented Programming, brief introduction to inheritance and method overloading.',
-  //   image: ''
-  // },
-  // {
-  //   topic: 'Third Party Packages',
-  //   date: new Date(2019, 3, 22),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture8/lecture8_condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture8/lecture8.pdf',
-  //   description:
-  //     'Installing and using third party packages using pip. Example solution to a real life problem. Announcement of final projects.',
-  //   image: ''
-  // }
 ];
 
 export interface Lecture {

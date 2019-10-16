@@ -35,8 +35,13 @@
     <ng-container matColumnDef="slide">
       <th mat-header-cell *matHeaderCellDef>Slides</th>
       <td mat-cell *matCellDef="let element">
-        <a href="{{ element.slideFull }}" target="_blank">Full</a> /
-        <a href="{{ element.slideCondensed }}" target="_blank">Condensed</a>
+        <span *ngIf="element.slideFull || element.slideCondensed; else elseTemplate">
+          <a href="{{ element.slideFull }}" target="_blank">Full</a> /
+          <a href="{{ element.slideCondensed }}" target="_blank">Condensed</a>
+        </span>
+        <ng-template #elseTemplate>
+          None
+        </ng-template>
       </td>
     </ng-container>
 
