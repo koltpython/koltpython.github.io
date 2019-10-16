@@ -5,10 +5,21 @@
 
 .actions {
   margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @media (min-width: 720px) {
   .homeContainer {
     display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
   }
 }
