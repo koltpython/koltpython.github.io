@@ -10,6 +10,18 @@
   justify-content: space-around;
 }
 
+h2 {
+  margin-bottom: 0.4em;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin-top: 0;
+}
+
 @media (min-width: 720px) {
   .homeContainer {
     display: flex;
