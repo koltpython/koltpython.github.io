@@ -42,8 +42,11 @@ export class TeamComponent implements OnInit {
   ];
 
   advisors: Advisor[] = [
+    { name: 'Prof. Barış Tan', image: '../assets/images/btan.jpg' },
     { name: 'Prof. Murat Sözer', image: '../assets/images/msozer.jpg' },
-    { name: 'Prof. Seda Ertaç', image: '../assets/images/sertac.jpg' },
+    { name: 'Prof. Öznur Özkasap', image: '../assets/images/oozkasap.jpg' },
+    { name: 'Prof. Barış Bozkurt', image: '../assets/images/bbozkurt.jpg' },
+    { name: 'Dr. Banu Yobaş', image: '../assets/images/byobas.jpg' },
     { name: 'Dr. Zuhal Zeybekoğlu', image: '../assets/images/zzeybekoglu.jpg' }
   ];
 
