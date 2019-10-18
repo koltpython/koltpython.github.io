@@ -10,6 +10,7 @@ interface Advisor {
   name: string;
   image: string;
   title?: string;
+  university?: string;
 }
 
 @Component({
@@ -42,12 +43,42 @@ export class TeamComponent implements OnInit {
   ];
 
   advisors: Advisor[] = [
-    { name: 'Prof. Barış Tan', image: '../assets/images/btan.jpg' },
-    { name: 'Prof. Murat Sözer', image: '../assets/images/msozer.jpg' },
-    { name: 'Prof. Öznur Özkasap', image: '../assets/images/oozkasap.jpg' },
-    { name: 'Prof. Barış Bozkurt', image: '../assets/images/bbozkurt.jpg' },
-    { name: 'Dr. Banu Yobaş', image: '../assets/images/byobas.jpg' },
-    { name: 'Dr. Zuhal Zeybekoğlu', image: '../assets/images/zzeybekoglu.jpg' }
+    {
+      name: 'Prof. Barış Tan',
+      image: '../assets/images/btan.jpg',
+      title: 'Vice President for Academic Affairs',
+      university: 'Koç University'
+    },
+    {
+      name: 'Prof. Murat Sözer',
+      image: '../assets/images/msozer.jpg',
+      title: 'Director, Office of Learning and Teaching',
+      university: 'Koç University'
+    },
+    {
+      name: 'Prof. Öznur Özkasap',
+      image: '../assets/images/oozkasap.jpg',
+      title: 'Computer Engineering Department',
+      university: 'Koç University'
+    },
+    {
+      name: 'Prof. Barış Bozkurt',
+      image: '../assets/images/bbozkurt.jpg',
+      title: 'Computer Engineering Department',
+      university: 'İzmir Democracy University'
+    },
+    {
+      name: 'Dr. Banu Yobaş',
+      image: '../assets/images/byobas.jpg',
+      title: 'Computer Engineering Department',
+      university: 'Koç University'
+    },
+    {
+      name: 'Dr. Zuhal Zeybekoğlu',
+      image: '../assets/images/zzeybekoglu.jpg',
+      title: 'Manager, Office of Learning and Teaching',
+      university: 'Koç University'
+    }
   ];
 
   constructor() {}
