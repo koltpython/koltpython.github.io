@@ -63,8 +63,8 @@ const LECTURE_DATA: Lecture[] = [
   {
     topic: 'Functions',
     date: new Date(2019, 9, 21),
-    slideCondensed: null,
-    slideFull: null,
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5.pdf',
     description:
       'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables.',
     image: ''

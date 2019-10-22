@@ -11,36 +11,36 @@
 // hue. Available color palettes: https://material.io/design/color/
 
 $koc-primary-colors: (
-    50 : #f8e3e6,
-    100 : #edb8c0,
-    200 : #e28997,
-    300 : #d6596d,
-    400 : #cd364d,
-    500 : #c4122e,
-    600 : #be1029,
-    700 : #b60d23,
-    800 : #af0a1d,
-    900 : #a20512,
-    A100 : #ffcdcf,
-    A200 : #ff9a9f,
-    A400 : #ff676e,
-    A700 : #ff4d56,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #000000,
-        400 : #ffffff,
-        500 : #ffffff,
-        600 : #ffffff,
-        700 : #ffffff,
-        800 : #ffffff,
-        900 : #ffffff,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
+  50: #f8e3e6,
+  100: #edb8c0,
+  200: #e28997,
+  300: #d6596d,
+  400: #cd364d,
+  500: #c4122e,
+  600: #be1029,
+  700: #b60d23,
+  800: #af0a1d,
+  900: #a20512,
+  A100: #ffcdcf,
+  A200: #ff9a9f,
+  A400: #ff676e,
+  A700: #ff4d56,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
 );
 
 $koc-primary: mat-palette($koc-primary-colors);
@@ -57,11 +57,35 @@ $koc-theme: mat-light-theme($koc-primary, $koc-accent, $koc-warn);
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($koc-theme);
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
 
-app-root{
-    display: flex;
-    min-height: 100%;
-    flex-direction: column;
+app-root {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+a {
+  border: none;
+  outline: none;
+  color: #c4122e;
+  -webkit-tap-highlight-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  color: #c4122e;
 }
