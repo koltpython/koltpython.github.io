@@ -51,10 +51,11 @@ export class Assignment1AComponent implements OnInit, AfterViewInit {
   }
 
   private async assignment1A(): Promise<void> {
+    this.terminal.underlying.clear();
     this.printToTerminal('Welcome to Ultimatum Game!');
     this.printToTerminal('Ultimatum Game has Two Characters: The Proposer & The Responder');
     const total_amount = 10;
-    this.printToTerminal(`Proposer has given ${total_amount}`);
+    this.printToTerminal(`Proposer has given $${total_amount}`);
     this.printToTerminal('Proposer decides how to split this amount between himself and the responder');
     this.printToTerminal(
       'Responder is informed of the proposed allocation and asked to decide between accepting and rejecting this allocation.'
@@ -66,10 +67,36 @@ export class Assignment1AComponent implements OnInit, AfterViewInit {
 
     this.printToTerminal("LET'S START!");
 
-    let input = await this.takeInputFromTerminal('Please enter a number: ');
-    while (input !== 'stop') {
-      input = await this.takeInputFromTerminal('Please enter a number: ');
+    let offer = await this.takeInputFromTerminal(
+      `Proposer, how much do you want to offer to responder from $${total_amount}: `
+    );
+    while (isNaN(+offer) || +offer > total_amount || +offer < 0) {
+      this.printToTerminal('Please enter a valid value!');
+      offer = await this.takeInputFromTerminal(
+        `Proposer, how much do you want to offer to responder from $${total_amount}: `
+      );
     }
+
+    let answer = await this.takeInputFromTerminal(
+      `Responder, do you accept proposer's offer of taking $${offer} from $${total_amount}: `
+    );
+    while (answer !== 'yes' && answer !== 'no') {
+      this.printToTerminal('Please enter a valid response! (yes or no)');
+      answer = await this.takeInputFromTerminal(
+        `Responder, do you accept proposer's offer of taking $${offer} from $${total_amount}: `
+      );
+    }
+
+    if (answer === 'yes') {
+      this.printToTerminal(
+        `Responder accepted the offer, Proposer gets $${offer} and Responder gets $${total_amount - +offer}.`
+      );
+    } else {
+      this.printToTerminal('Responder rejected the offer, both proposer and responder gets $0.');
+    }
+
+    await this.takeInputFromTerminal('Enter any value to restart the game: ');
+    setTimeout(async () => await this.assignment1A());
   }
 
   private printToTerminal(message: string, end: string = '\r\n'): void {
