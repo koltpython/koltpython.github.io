@@ -1,20 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Assignment1AComponent } from './assignment1-a.component';
+import { ConsoleAssignmentComponent } from './console-assignment';
 
 describe('Assignment1AComponent', () => {
-  let component: Assignment1AComponent;
-  let fixture: ComponentFixture<Assignment1AComponent>;
+  let component: ConsoleAssignmentComponent;
+  let fixture: ComponentFixture<ConsoleAssignmentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Assignment1AComponent ]
-    })
-    .compileComponents();
+      declarations: [ConsoleAssignmentComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Assignment1AComponent);
+    fixture = TestBed.createComponent(ConsoleAssignmentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

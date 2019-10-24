@@ -2,23 +2,28 @@ import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { NgTerminal } from 'ng-terminal';
 import { Subject } from 'rxjs';
 import { take } from 'rxjs/operators';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
-  selector: 'app-assignment1-a',
-  templateUrl: './assignment1-a.component.html',
-  styleUrls: ['./assignment1-a.component.scss']
+  selector: 'app-console-assignment',
+  templateUrl: './console-assignment.component.html',
+  styleUrls: ['./console-assignment.component.scss']
 })
-export class Assignment1AComponent implements OnInit, AfterViewInit {
+export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
   @ViewChild('term', { static: true }) terminal: NgTerminal;
 
   private lastInputSubject: Subject<string>;
   private lastInput: string;
   private lastLinePrintYPosition: number;
+  private key: string;
 
-  constructor() {}
+  constructor(private _route: ActivatedRoute) {}
 
   ngOnInit() {
     this.lastInputSubject = new Subject<string>();
+    this._route.paramMap.subscribe((params: ParamMap) => {
+      this.key = params.get('key');
+    });
   }
 
   ngAfterViewInit() {
@@ -47,56 +52,74 @@ export class Assignment1AComponent implements OnInit, AfterViewInit {
         }
       }
     });
-    this.assignment1A();
+
+    switch (this.key) {
+      case 'guacamole':
+        this.assignment1A();
+        break;
+      case 'mayonnaise':
+        this.assignment2A();
+        break;
+      default:
+        this.invalidAssignmentKey();
+        break;
+    }
   }
 
   private async assignment1A(): Promise<void> {
     this.terminal.underlying.clear();
-    this.printToTerminal('Welcome to Ultimatum Game!');
-    this.printToTerminal('Ultimatum Game has Two Characters: The Proposer & The Responder');
+    this.printToTerminal('Welcome to the ultimatum bargaining game!');
+    this.printToTerminal('This game has two players: The proposer and the responder');
     const total_amount = 10;
-    this.printToTerminal(`Proposer has given $${total_amount}`);
-    this.printToTerminal('Proposer decides how to split this amount between himself and the responder');
+    this.printToTerminal(`The proposer is given $${total_amount}`);
+    this.printToTerminal('Proposer decides how to split this amount between himself and the responder.');
+    this.printToTerminal('Responder is informed of the proposed allocation.');
+    this.printToTerminal('Responder decides whether to accept or reject the proposed allocation.');
     this.printToTerminal(
-      'Responder is informed of the proposed allocation and asked to decide between accepting and rejecting this allocation.'
+      'If the responder accepts, both proposer and responder receive payoffs according to the proposed allocation.'
     );
-    this.printToTerminal(
-      'If the responder accepts this allocation both proposer and responder receives payoffs according to allocation.'
-    );
-    this.printToTerminal('If the responder rejects this allocation neither proposer nor receiver gets any payoff.');
+    this.printToTerminal('If the responder rejects, neither proposer nor responder receive any money.');
 
-    this.printToTerminal("LET'S START!");
+    this.printToTerminal("Let's start!");
 
     let offer = await this.takeInputFromTerminal(
-      `Proposer, how much do you want to offer to responder from $${total_amount}: `
+      `Proposer, how much do you want to offer to the responder from $${total_amount}: `
     );
     while (isNaN(+offer) || +offer > total_amount || +offer < 0) {
       this.printToTerminal('Please enter a valid value!');
       offer = await this.takeInputFromTerminal(
-        `Proposer, how much do you want to offer to responder from $${total_amount}: `
+        `Proposer, how much do you want to offer to the responder from $${total_amount}: `
       );
     }
 
     let answer = await this.takeInputFromTerminal(
-      `Responder, do you accept proposer's offer of taking $${offer} from $${total_amount}: `
+      `Responder, do you accept the proposer's offer of taking $${offer} from $${total_amount}: `
     );
     while (answer !== 'yes' && answer !== 'no') {
       this.printToTerminal('Please enter a valid response! (yes or no)');
       answer = await this.takeInputFromTerminal(
-        `Responder, do you accept proposer's offer of taking $${offer} from $${total_amount}: `
+        `Responder, do you accept the proposer's offer of taking $${offer} from $${total_amount}: `
       );
     }
 
     if (answer === 'yes') {
       this.printToTerminal(
-        `Responder accepted the offer, Proposer gets $${offer} and Responder gets $${total_amount - +offer}.`
+        `The responder has accepted the offer, the proposer gets $${offer} and the responder gets $${total_amount -
+          +offer}.`
       );
     } else {
-      this.printToTerminal('Responder rejected the offer, both proposer and responder gets $0.');
+      this.printToTerminal('The responder rejected the offer, both the proposer and the responder gets $0.');
     }
 
     await this.takeInputFromTerminal('Enter any value to restart the game: ');
     setTimeout(async () => await this.assignment1A());
+  }
+
+  private async assignment2A(): Promise<void> {}
+
+  private invalidAssignmentKey(): void {
+    this.terminal.underlying.clear();
+    this.printToTerminal('You entered a wrong assignment key, please check the url.');
   }
 
   private printToTerminal(message: string, end: string = '\r\n'): void {

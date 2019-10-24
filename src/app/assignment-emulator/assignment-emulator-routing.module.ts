@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { Assignment1AComponent } from './components/assignment1-a/assignment1-a.component';
+import { ConsoleAssignmentComponent } from './components/console-assignment/console-assignment.component';
 
 const routes: Routes = [
   {
-    path: 'assignment1a',
-    component: Assignment1AComponent
+    path: ':key',
+    component: ConsoleAssignmentComponent,
+    pathMatch: 'full'
   }
 ];
 
