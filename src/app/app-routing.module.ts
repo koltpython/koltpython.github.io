@@ -9,6 +9,10 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
   { path: 'lectures', component: LectureComponent },
   { path: 'assignments', component: AssignmentsComponent },
+  {
+    path: 'assignments/demo',
+    loadChildren: () => import('./assignment-emulator/assignment-emulator.module').then(m => m.AssignmentEmulatorModule)
+  },
   { path: 'resources', component: ResourcesComponent },
   { path: 'apply', loadChildren: () => import('./apply/apply.module').then(m => m.ApplyModule) },
   { path: 'feedback', component: FeedbackComponent },
