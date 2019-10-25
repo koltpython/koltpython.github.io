@@ -58,7 +58,7 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
         this.assignment1A();
         break;
       case 'mayonnaise':
-        this.assignment2A();
+        this.assignment1B();
         break;
       default:
         this.invalidAssignmentKey();
@@ -67,7 +67,7 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
   }
 
   private async assignment1A(): Promise<void> {
-    this.terminal.underlying.clear();
+    this.terminal.underlying.reset();
     this.printToTerminal('Welcome to the ultimatum bargaining game!');
     this.printToTerminal('This game has two players: The proposer and the responder');
     const total_amount = 10;
@@ -115,10 +115,63 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
     setTimeout(async () => await this.assignment1A());
   }
 
-  private async assignment2A(): Promise<void> {}
+  private async assignment1B(): Promise<void> {
+    this.terminal.underlying.reset();
+    this.printToTerminal('Welcome to first price auction game!');
+    this.printToTerminal('There are two bidders in this game.');
+    this.printToTerminal(
+      'Each bidder (Player A and Player B) is privately assigned a random "valuation" for the item between 1 and 10.'
+    );
+    this.printToTerminal('Their randomly assigned values are told to the players (privately).');
+    this.printToTerminal('Players then privately submit their bids for the item.)');
+    this.printToTerminal("Players can bid values in range [0, item's valuation] (inclusive).");
+    this.printToTerminal("The winner is announced and also each player's payoff is calculated and printed.");
+
+    const valuationA = this.getRandomInt(1, 11);
+    const valuationB = this.getRandomInt(1, 11);
+
+    const bidA = await this.assignment1BPlayerA(valuationA);
+    const bidB = await this.assignment1BPlayerB(valuationB);
+
+    if (bidA > bidB) {
+      this.printToTerminal('Player A won the auction.');
+      this.printToTerminal(`Player A received ${valuationA - bidA} payoff and Player B received 0 payoff.`);
+    } else if (bidB > bidA) {
+      this.printToTerminal('Player B won the auction.');
+      this.printToTerminal(`Player B received ${valuationB - bidB} payoff and Player A received 0 payoff.`);
+    } else {
+      this.printToTerminal('Auction resulted in a draw.');
+      this.printToTerminal('Both players received 0 payoff.');
+    }
+
+    await this.takeInputFromTerminal('Enter any value to restart the game: ');
+    setTimeout(async () => await this.assignment1B());
+  }
+
+  private async assignment1BPlayerA(valuationA: number): Promise<number> {
+    this.printToTerminal(`Player A, you are assigned the random valuation of ${valuationA}.`);
+    let bidA = await this.takeInputFromTerminal('How much would you like to bid?: ');
+    while (isNaN(+bidA) || +bidA > valuationA || +bidA < 0) {
+      this.printToTerminal('Please enter a valid value!');
+      bidA = await this.takeInputFromTerminal('How much would you like to bid?: ');
+    }
+    this.terminal.underlying.reset();
+    return +bidA;
+  }
+
+  private async assignment1BPlayerB(valuationB: number): Promise<number> {
+    this.printToTerminal(`Player B, you are assigned the random valuation of ${valuationB}.`);
+    let bidB = await this.takeInputFromTerminal('How much would you like to bid?: ');
+    while (isNaN(+bidB) || +bidB > valuationB || +bidB < 0) {
+      this.printToTerminal('Please enter a valid value!');
+      bidB = await this.takeInputFromTerminal('How much would you like to bid?: ');
+    }
+    this.terminal.underlying.reset();
+    return +bidB;
+  }
 
   private invalidAssignmentKey(): void {
-    this.terminal.underlying.clear();
+    this.terminal.underlying.reset();
     this.printToTerminal('You entered a wrong assignment key, please check the url.');
   }
 
@@ -132,5 +185,12 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
       this.printToTerminal(prompt, '');
     }
     return this.lastInputSubject.pipe(take(1)).toPromise();
+  }
+
+  // The maximum is exclusive and the minimum is inclusive
+  private getRandomInt(min: number, max: number): number {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
   }
 }
