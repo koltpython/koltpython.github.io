@@ -80,8 +80,8 @@ const LECTURE_DATA: Lecture[] = [
   {
     topic: 'Containers, Aliasing & Mutability',
     date: new Date(2019, 10, 4),
-    slideCondensed: null,
-    slideFull: null,
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6.pdf',
     description:
       'More detailed look into Python data and memory model. Discussion about aliasing and cloning. List, Tuple, Set and Dictionary types and differences between them. Comparison between reassigning and mutation.',
     image: ''
@@ -89,8 +89,8 @@ const LECTURE_DATA: Lecture[] = [
   {
     topic: 'Error & Exception Handling, File Input and Output',
     date: new Date(2019, 10, 11),
-    slideCondensed: null,
-    slideFull: null,
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7.pdf',
     description: 'Standard file input and output in Python. Discussion about Exceptions and how to handle them.',
     image: ''
   },
