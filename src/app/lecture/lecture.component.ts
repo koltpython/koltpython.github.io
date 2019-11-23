@@ -95,20 +95,20 @@ const LECTURE_DATA: Lecture[] = [
     image: ''
   },
   {
-    topic: 'Using Third Party Packages',
+    topic: 'Example: Connect Four',
     date: new Date(2019, 10, 18),
     slideCondensed: null,
     slideFull: null,
-    description:
-      'Python Package Index(PyPI) and Package Installer for Python (pip). Installing and using third party packages using pip. Example solution to a real life problem.',
+    description: 'Example implementation of a command-line version of Connect Four game.',
     image: ''
   },
   {
-    topic: 'TBD',
+    topic: 'Using Third Party Packages',
     date: new Date(2019, 10, 25),
-    slideFull: null,
-    slideCondensed: null,
-    description: '',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture9/lecture9.pdf',
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture9/lecture9-condensed.pdf',
+    description:
+      'Python and VS Code installations. Python Package Index(PyPI) and Package Installer for Python (pip). Installing and using third party packages using pip. Virtual environments (venv).',
     image: ''
   },
   {
