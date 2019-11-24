@@ -23,6 +23,26 @@ const RESOURCES_DATA: Resource[] = [
     url: 'https://tutorial.djangogirls.org/en/python_installation/'
   },
   {
+    title: '[Video] How to Install Python on Windows (2019)',
+    credit: 'Pretty Printed',
+    url: 'https://www.youtube.com/watch?v=ymDk7jXE9dQ'
+  },
+  {
+    title: '[Video] How to install Python on Mac OS',
+    credit: 'Raghav Pal',
+    url: 'https://www.youtube.com/watch?v=TgA4ObrowRg'
+  },
+  {
+    title: '[Video] How to Install Python on Ubuntu 18.04',
+    credit: 'Roger Perkin',
+    url: 'https://www.youtube.com/watch?v=BDGm8xQTlJg'
+  },
+  {
+    title: '[Video] Visual Studio Code Beginner Tutorial | Windows and Mac OS',
+    credit: 'Raghav Pal',
+    url: 'https://www.youtube.com/watch?v=Y7eoHDrw-aU'
+  },
+  {
     title: 'Python in VS Code',
     credit: 'Microsoft',
     url: 'https://code.visualstudio.com/docs/languages/python'
@@ -63,12 +83,17 @@ const RESOURCES_DATA: Resource[] = [
     url: 'https://tutorial.djangogirls.org/en/intro_to_command_line/'
   },
   {
-    title: 'Ready for Readable Code?',
+    title: 'Virtual Environments Primer',
+    credit: 'Sam Redmond',
+    url: 'https://github.com/stanfordpython/python-handouts/blob/master/virtual-environments.md'
+  },
+  {
+    title: '[Video] Ready for Readable Code?',
     credit: 'John Papa',
     url: 'https://www.youtube.com/watch?v=56mETnrByBM'
   },
   {
-    title: 'Facts and Myths about Python names and values',
+    title: '[Video] Facts and Myths about Python names and values',
     credit: 'Ned Batchelder',
     url: 'https://www.youtube.com/watch?v=_AEJHKGk9ns'
   }
