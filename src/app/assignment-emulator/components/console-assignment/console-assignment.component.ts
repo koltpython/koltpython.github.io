@@ -60,6 +60,9 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
       case 'mayonnaise':
         this.assignment1B();
         break;
+      case 'domates':
+        this.assignment2A();
+        break;
       default:
         this.invalidAssignmentKey();
         break;
@@ -168,6 +171,59 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
     }
     this.terminal.underlying.reset();
     return +bidB;
+  }
+
+  private async assignment2A(): Promise<void> {
+    this.terminal.underlying.reset();
+    const players = ['AHMET', 'CEREN', 'GUL SENA', 'HASAN CAN'];
+    this.printToTerminal(`Players in the game: \n${players.join(', ')}`);
+    const numberOfRounds = 5;
+    const amountReceived = 20;
+    const rateOfReturn = 0.4;
+    const contributions = new Object();
+    const payoffs = new Object();
+
+    for (let round = 0; round < numberOfRounds; round++) {
+      let roundTotalContribution = 0;
+      for (const player of players) {
+        this.printToTerminal(`Each player is given $${amountReceived}`);
+
+        let playerContribution = await this.takeInputFromTerminal(
+          `Player ${player} how much do you like to contribute to the project: `
+        );
+        while (isNaN(+playerContribution) || +playerContribution > amountReceived || +playerContribution < 0) {
+          this.printToTerminal('Please enter a valid value!');
+          playerContribution = await this.takeInputFromTerminal(
+            `Player ${player} how much do you like to contribute to the project: `
+          );
+        }
+        roundTotalContribution += +playerContribution;
+
+        this.terminal.underlying.reset();
+
+        if (round === 0) {
+          contributions[player] = [+playerContribution];
+        } else {
+          contributions[player].push(+playerContribution);
+        }
+      }
+
+      for (const player of Object.keys(contributions)) {
+        const contribution = contributions[player][round];
+        this.printToTerminal(
+          `${player} contributes ${contribution} to the water purification project.\n\t${player} receives$${amountReceived -
+            contribution +
+            roundTotalContribution * rateOfReturn} payoff.`
+        );
+      }
+
+      this.printToTerminal(`The group receives a benefit of ${roundTotalContribution * rateOfReturn}`);
+    }
+
+    this.printToTerminal('Results are saved to a file named contributions.csv.');
+
+    await this.takeInputFromTerminal('Enter any value to restart the game: ');
+    setTimeout(async () => await this.assignment2A());
   }
 
   private invalidAssignmentKey(): void {
