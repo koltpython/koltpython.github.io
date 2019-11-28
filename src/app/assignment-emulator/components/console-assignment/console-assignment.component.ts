@@ -63,6 +63,9 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
       case 'domates':
         this.assignment2A();
         break;
+      case 'onion':
+        this.assignment2B();
+        break;
       default:
         this.invalidAssignmentKey();
         break;
@@ -115,7 +118,7 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
     }
 
     await this.takeInputFromTerminal('Enter any value to restart the game: ');
-    setTimeout(async () => await this.assignment1A());
+    requestAnimationFrame(async () => await this.assignment1A());
   }
 
   private async assignment1B(): Promise<void> {
@@ -148,7 +151,7 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
     }
 
     await this.takeInputFromTerminal('Enter any value to restart the game: ');
-    setTimeout(async () => await this.assignment1B());
+    requestAnimationFrame(async () => await this.assignment1B());
   }
 
   private async assignment1BPlayerA(valuationA: number): Promise<number> {
@@ -181,7 +184,6 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
     const amountReceived = 20;
     const rateOfReturn = 0.4;
     const contributions = new Object();
-    const payoffs = new Object();
 
     for (let round = 0; round < numberOfRounds; round++) {
       let roundTotalContribution = 0;
@@ -223,7 +225,53 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
     this.printToTerminal('Results are saved to a file named contributions.csv.');
 
     await this.takeInputFromTerminal('Enter any value to restart the game: ');
-    setTimeout(async () => await this.assignment2A());
+    requestAnimationFrame(() => this.assignment2A());
+  }
+
+  private async assignment2B(): Promise<void> {
+    this.terminal.underlying.reset();
+    const players = ['AHMET', 'CEREN', 'GUL SENA', 'HASAN CAN'];
+    this.printToTerminal(`Players in the game: \n${players.join(', ')}`);
+    // const
+    const numberOfBalls = 100;
+    const redBallRatio = 0.4;
+    const prize = 20;
+    const playerGuesses = new Object();
+    const payoffs = new Object();
+
+    const jar = Array(numberOfBalls)
+      .fill(null)
+      .map((x, i) => (i < numberOfBalls * redBallRatio ? 'red' : 'blue'));
+
+    for (const player of players) {
+      this.terminal.underlying.reset();
+      Object.keys(playerGuesses).forEach(playerName => {
+        this.printToTerminal(`${playerName}'s choice is ${playerGuesses[playerName]}`);
+      });
+
+      const ball = jar[this.getRandomInt(0, jar.length)];
+      this.printToTerminal(`${player}, your random ball is ${ball}`);
+
+      let guess = await this.takeInputFromTerminal(`${player} make a guess: `);
+
+      while (guess !== 'red' && guess !== 'blue') {
+        guess = await this.takeInputFromTerminal(`${player} make a guess: `);
+      }
+
+      playerGuesses[player] = guess;
+    }
+
+    this.printToTerminal('Since there were more blue balls, ');
+
+    players.forEach(player => {
+      payoffs[player] = playerGuesses[player] === 'blue' ? prize : 0;
+      this.printToTerminal(`${player} earns ${payoffs[player]}.`);
+    });
+
+    this.printToTerminal('Results are saved to a file named payoff.csv.');
+
+    await this.takeInputFromTerminal('Enter any value to restart the game: ');
+    requestAnimationFrame(() => this.assignment2B());
   }
 
   private invalidAssignmentKey(): void {
@@ -233,7 +281,7 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
 
   private printToTerminal(message: string, end: string = '\r\n'): void {
     this.terminal.write(message + end);
-    setTimeout(() => (this.lastLinePrintYPosition = this.terminal.underlying.buffer.cursorX));
+    requestAnimationFrame(() => (this.lastLinePrintYPosition = this.terminal.underlying.buffer.cursorX));
   }
 
   private async takeInputFromTerminal(prompt: string): Promise<string> {
@@ -243,10 +291,26 @@ export class ConsoleAssignmentComponent implements OnInit, AfterViewInit {
     return this.lastInputSubject.pipe(take(1)).toPromise();
   }
 
-  // The maximum is exclusive and the minimum is inclusive
+  /**
+   * Generates a random integer in range [min, max)
+   * @param min inclusive
+   * @param max exclusive
+   */
   private getRandomInt(min: number, max: number): number {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+  private shuffle(array: any[]): void {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+      // swap elements array[i] and array[j]
+      // we use "destructuring assignment" syntax to achieve that
+      // you'll find more details about that syntax in later chapters
+      // same can be written as:
+      // let t = array[i]; array[i] = array[j]; array[j] = t
+      [array[i], array[j]] = [array[j], array[i]];
+    }
   }
 }
