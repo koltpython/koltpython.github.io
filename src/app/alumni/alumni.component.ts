@@ -23,7 +23,20 @@ export class AlumniComponent implements OnInit {
     {
       term: 'Spring',
       year: 2019,
-      teamMembers: [{ name: 'Ahmet Uysal', kuId: 'auysal16' }, { name: 'İpek Köprülülü', kuId: 'ikoprululu16' }]
+      teamMembers: [
+        { name: 'Ahmet Uysal', kuId: 'auysal16' },
+        { name: 'İpek Köprülülü', kuId: 'ikoprululu16' }
+      ]
+    },
+    {
+      term: 'Fall',
+      year: 2019,
+      teamMembers: [
+        { name: 'Ahmet Uysal', kuId: 'auysal16' },
+        { name: 'Ceren Kocaoğullar', kuId: 'ckocaogullar15' },
+        { name: 'Gül Sena Altıntaş', kuId: 'galtintas17' },
+        { name: 'Hasan Can Aslan', kuId: 'haslan16' }
+      ]
     }
   ];
 

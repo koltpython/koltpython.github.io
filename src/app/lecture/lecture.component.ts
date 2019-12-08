@@ -112,19 +112,21 @@ const LECTURE_DATA: Lecture[] = [
     image: ''
   },
   {
-    topic: 'TBD',
+    topic: 'Workshop: Django',
     date: new Date(2019, 11, 2),
-    slideFull: null,
-    slideCondensed: null,
-    description: '',
+    slideFull: 'https://github.com/koltpython/python-workshops/tree/master/1-Django',
+    slideCondensed: 'https://github.com/koltpython/python-workshops/tree/master/1-Django',
+    description:
+      'This workshop provides a sample of how Django Framework can help you build Web applications using Python. Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source. In this workshop, we will create a blog site with Django framework then deploy our site on the pythonanywhere.com website with a free account.',
     image: ''
   },
   {
-    topic: 'TBD',
+    topic: 'Workshop: APIs & Data Visualization',
     date: new Date(2019, 11, 9),
-    slideFull: null,
-    slideCondensed: null,
-    description: '',
+    slideFull: 'https://github.com/koltpython/python-workshops/tree/master/2-APIs%20%26%20Data%20Visualization',
+    slideCondensed: 'https://github.com/koltpython/python-workshops/tree/master/2-APIs%20%26%20Data%20Visualization',
+    description:
+      'This workshop provides a sample of how you can use Python to collect and visualize data from the internet. We will utilize the requests package to collect data from Instagram APIs and use the data we gathered to create visual charts.',
     image: ''
   }
 ];
