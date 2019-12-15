@@ -123,8 +123,8 @@ const LECTURE_DATA: Lecture[] = [
   {
     topic: 'Workshop: APIs & Data Visualization',
     date: new Date(2019, 11, 9),
-    slideFull: 'https://github.com/koltpython/python-workshops/tree/master/2-APIs%20%26%20Data%20Visualization',
-    slideCondensed: 'https://github.com/koltpython/python-workshops/tree/master/2-APIs%20%26%20Data%20Visualization',
+    slideFull: 'https://github.com/koltpython/python-workshops/tree/master/2-APIs-and-Data-Visualization',
+    slideCondensed: 'https://github.com/koltpython/python-workshops/tree/master/2-APIs-and-Data-Visualization',
     description:
       'This workshop provides a sample of how you can use Python to collect and visualize data from the internet. We will utilize the requests package to collect data from Instagram APIs and use the data we gathered to create visual charts.',
     image: ''

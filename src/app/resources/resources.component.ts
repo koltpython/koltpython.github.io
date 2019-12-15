@@ -96,6 +96,11 @@ const RESOURCES_DATA: Resource[] = [
     title: '[Video] Facts and Myths about Python names and values',
     credit: 'Ned Batchelder',
     url: 'https://www.youtube.com/watch?v=_AEJHKGk9ns'
+  },
+  {
+    title: 'KOLT Python Workshops',
+    credit: 'KOLT Python Team',
+    url: 'https://github.com/koltpython/python-workshops'
   }
 ];
 

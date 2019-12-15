@@ -1,15 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-const ASSIGNMENT_DATA: Assignment[] = [
-  {
-    title: 'BMI Calculator',
-    replitLink: 'https://repl.it/student_embed/assignment/3957308/f74f88fb19cf96875db4321f3cb40556',
-    reviewCondensed: null,
-    reviewFull: null,
-    releaseDate: new Date(2019, 8, 23, 11, 30),
-    dueDate: new Date(2019, 8, 23, 12, 45)
-  }
-];
+const ASSIGNMENT_DATA: Assignment[] = [];
 
 interface Assignment {
   title: String;
