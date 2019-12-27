@@ -13,6 +13,7 @@ import { ResourcesComponent } from './resources/resources.component';
 import { FooterComponent } from './footer/footer.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { MaterialModule } from './material/material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { MaterialModule } from './material/material.module';
     FooterComponent,
     FeedbackComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
