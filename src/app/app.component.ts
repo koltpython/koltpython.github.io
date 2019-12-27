@@ -1,5 +1,5 @@
-import {IdleMonitorService} from '@scullyio/ng-lib'; 
- import { Component, ViewEncapsulation } from '@angular/core';
+import { IdleMonitorService } from '@scullyio/ng-lib';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,8 @@ import {IdleMonitorService} from '@scullyio/ng-lib';
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent { 
- constructor (private idle: IdleMonitorService) { } 
+export class AppComponent {
+  constructor(private idle: IdleMonitorService) {}
 
-  title = 'KoltPythonWebsite';
+  title = 'kolt-python-website';
 }

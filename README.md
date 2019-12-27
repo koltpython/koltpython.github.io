@@ -1,4 +1,4 @@
-# KoltPythonWebsite
+# kolt-python-website
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
@@ -17,6 +17,14 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Publish
+
+Run `ng build --prod --base-href="https://koltpython.com"` to build the project in production mode.
+
+Run `npm run scully` to generate static content of the routes using [Scully](https://github.com/scullyio/scully/).
+
+Run `ngh --branch=master --cname=koltpython.com --dir=dist/static` to publish the site via GitHub Pages.
 
 ## Running end-to-end tests
 

@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'KoltPythonWebsite'`, () => {
+  it(`should have as title 'kolt-python-website'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('KoltPythonWebsite');
+    expect(app.title).toEqual('kolt-python-website');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to KoltPythonWebsite!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to kolt-python-website!');
   });
 });
