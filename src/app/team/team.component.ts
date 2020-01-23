@@ -23,22 +23,47 @@ export class TeamComponent implements OnInit {
     {
       name: 'Ahmet Uysal',
       image: '../assets/images/ahmet.jpg',
-      title: 'Senior CE Student'
+      title: 'Senior COMP Student'
     },
     {
       name: 'Ceren Kocaoğullar',
       image: '../assets/images/ceren.jpg',
-      title: 'Senior CE & MAVA Student'
+      title: 'Senior COMP & MAVA Student'
     },
     {
       name: 'Gül Sena Altıntaş',
       image: '../assets/images/gulsena.jpg',
-      title: 'Junior CE & Math Student'
+      title: 'Junior COMP & MATH Student'
     },
     {
       name: 'Hasan Can Aslan',
       image: '../assets/images/hasancan.jpg',
-      title: 'Junior CE & ECON Student'
+      title: 'Junior COMP & ECON Student'
+    },
+    {
+      name: 'Necla Mutlu',
+      image: '../assets/images/necla.jpg',
+      title: 'Sophomore COMP Student'
+    },
+    {
+      name: 'Fırat Tamur',
+      image: '../assets/images/firat.jpg',
+      title: 'Junior COMP & INDR Student'
+    },
+    {
+      name: 'Ayşe Turşucular',
+      image: '../assets/images/ayse.jpg',
+      title: 'Sophomore ECON & INDR Student'
+    },
+    {
+      name: 'Haluk Ceyhun Gün',
+      image: '../assets/images/haluk.jpg',
+      title: 'Senior ELEC Student'
+    },
+    {
+      name: 'Halil Eralp Koçaş',
+      image: '../assets/images/eralp.jpg',
+      title: 'Senior ELEC & COMP Student'
     }
   ];
 

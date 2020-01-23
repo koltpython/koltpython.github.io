@@ -10,7 +10,7 @@ const RESOURCES_DATA: Resource[] = [
   {
     title: 'Course Information',
     credit: 'Ahmet, Ceren, Gül Sena, Hasan Can',
-    url: 'https://docs.google.com/document/d/1aRPgNOht1QBMnwcQpvt2mAwUF19dPFZS5RKIWYocmnY/'
+    url: 'https://docs.google.com/document/d/10-ILVxuiD2Z7EAe4U5yC0csZoMzXN1moNFj6m6pW_yY'
   },
   // {
   //   title: 'Tentative Schedule',
