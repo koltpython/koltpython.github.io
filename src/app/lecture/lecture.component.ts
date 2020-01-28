@@ -27,108 +27,108 @@ const LECTURE_DATA: Lecture[] = [
   {
     topic: 'Introduction',
     // Month is 0 based 0 -> Jan.
-    date: new Date(2019, 8, 23),
+    date: new Date(2020, 0, 28),
     slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture1/lecture1-condensed.pdf',
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture1/lecture1.pdf',
     description:
       'Start of the semester, program introduction, Python installations and brief introduction of Python variables, types and I/O.',
     image: ''
-  },
-  {
-    topic: 'Basic Operators & Branching',
-    date: new Date(2019, 8, 30),
-    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2-condensed.pdf',
-    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2.pdf',
-    description:
-      'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else).',
-    image: ''
-  },
-  {
-    topic: 'Strings, While Loops & Introduction to Lists',
-    date: new Date(2019, 9, 7),
-    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3-condensed.pdf',
-    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
-    description: 'Introduction to lists and basic list operations, slicing lists, strings and while loops.',
-    image: ''
-  },
-  {
-    topic: 'Lists Continued, For Loops',
-    date: new Date(2019, 9, 14),
-    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4-condensed.pdf',
-    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4.pdf',
-    description:
-      'Lists continued. More detailed look into list methods and ways to mutate lists. Discussion about ranges, for loops, break and continue statements.',
-    image: ''
-  },
-  {
-    topic: 'Functions',
-    date: new Date(2019, 9, 21),
-    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5-condensed.pdf',
-    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5.pdf',
-    description:
-      'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables.',
-    image: ''
-  },
-  {
-    topic: 'Holiday (Republic Day)',
-    date: new Date(2019, 9, 28),
-    slideCondensed: null,
-    slideFull: null,
-    description: '',
-    image: ''
-  },
-  {
-    topic: 'Containers, Aliasing & Mutability',
-    date: new Date(2019, 10, 4),
-    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6-condensed.pdf',
-    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6.pdf',
-    description:
-      'More detailed look into Python data and memory model. Discussion about aliasing and cloning. List, Tuple, Set and Dictionary types and differences between them. Comparison between reassigning and mutation.',
-    image: ''
-  },
-  {
-    topic: 'Error & Exception Handling, File Input and Output',
-    date: new Date(2019, 10, 11),
-    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7-condensed.pdf',
-    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7.pdf',
-    description: 'Standard file input and output in Python. Discussion about Exceptions and how to handle them.',
-    image: ''
-  },
-  {
-    topic: 'Example: Connect Four',
-    date: new Date(2019, 10, 18),
-    slideCondensed: null,
-    slideFull: null,
-    description: 'Example implementation of a command-line version of Connect Four game.',
-    image: ''
-  },
-  {
-    topic: 'Using Third Party Packages',
-    date: new Date(2019, 10, 25),
-    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture9/lecture9.pdf',
-    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture9/lecture9-condensed.pdf',
-    description:
-      'Python and VS Code installations. Python Package Index(PyPI) and Package Installer for Python (pip). Installing and using third party packages using pip. Virtual environments (venv).',
-    image: ''
-  },
-  {
-    topic: 'Workshop: Django',
-    date: new Date(2019, 11, 2),
-    slideFull: 'https://github.com/koltpython/python-workshops/tree/master/1-Django',
-    slideCondensed: 'https://github.com/koltpython/python-workshops/tree/master/1-Django',
-    description:
-      'This workshop provides a sample of how Django Framework can help you build Web applications using Python. Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source. In this workshop, we will create a blog site with Django framework then deploy our site on the pythonanywhere.com website with a free account.',
-    image: ''
-  },
-  {
-    topic: 'Workshop: APIs & Data Visualization',
-    date: new Date(2019, 11, 9),
-    slideFull: 'https://github.com/koltpython/python-workshops/tree/master/2-APIs-and-Data-Visualization',
-    slideCondensed: 'https://github.com/koltpython/python-workshops/tree/master/2-APIs-and-Data-Visualization',
-    description:
-      'This workshop provides a sample of how you can use Python to collect and visualize data from the internet. We will utilize the requests package to collect data from Instagram APIs and use the data we gathered to create visual charts.',
-    image: ''
   }
+  // {
+  //   topic: 'Basic Operators & Branching',
+  //   date: new Date(2019, 8, 30),
+  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2-condensed.pdf',
+  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2.pdf',
+  //   description:
+  //     'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else).',
+  //   image: ''
+  // },
+  // {
+  //   topic: 'Strings, While Loops & Introduction to Lists',
+  //   date: new Date(2019, 9, 7),
+  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3-condensed.pdf',
+  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
+  //   description: 'Introduction to lists and basic list operations, slicing lists, strings and while loops.',
+  //   image: ''
+  // },
+  // {
+  //   topic: 'Lists Continued, For Loops',
+  //   date: new Date(2019, 9, 14),
+  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4-condensed.pdf',
+  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4.pdf',
+  //   description:
+  //     'Lists continued. More detailed look into list methods and ways to mutate lists. Discussion about ranges, for loops, break and continue statements.',
+  //   image: ''
+  // },
+  // {
+  //   topic: 'Functions',
+  //   date: new Date(2019, 9, 21),
+  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5-condensed.pdf',
+  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5.pdf',
+  //   description:
+  //     'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables.',
+  //   image: ''
+  // },
+  // {
+  //   topic: 'Holiday (Republic Day)',
+  //   date: new Date(2019, 9, 28),
+  //   slideCondensed: null,
+  //   slideFull: null,
+  //   description: '',
+  //   image: ''
+  // },
+  // {
+  //   topic: 'Containers, Aliasing & Mutability',
+  //   date: new Date(2019, 10, 4),
+  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6-condensed.pdf',
+  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6.pdf',
+  //   description:
+  //     'More detailed look into Python data and memory model. Discussion about aliasing and cloning. List, Tuple, Set and Dictionary types and differences between them. Comparison between reassigning and mutation.',
+  //   image: ''
+  // },
+  // {
+  //   topic: 'Error & Exception Handling, File Input and Output',
+  //   date: new Date(2019, 10, 11),
+  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7-condensed.pdf',
+  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7.pdf',
+  //   description: 'Standard file input and output in Python. Discussion about Exceptions and how to handle them.',
+  //   image: ''
+  // },
+  // {
+  //   topic: 'Example: Connect Four',
+  //   date: new Date(2019, 10, 18),
+  //   slideCondensed: null,
+  //   slideFull: null,
+  //   description: 'Example implementation of a command-line version of Connect Four game.',
+  //   image: ''
+  // },
+  // {
+  //   topic: 'Using Third Party Packages',
+  //   date: new Date(2019, 10, 25),
+  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture9/lecture9.pdf',
+  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture9/lecture9-condensed.pdf',
+  //   description:
+  //     'Python and VS Code installations. Python Package Index(PyPI) and Package Installer for Python (pip). Installing and using third party packages using pip. Virtual environments (venv).',
+  //   image: ''
+  // },
+  // {
+  //   topic: 'Workshop: Django',
+  //   date: new Date(2019, 11, 2),
+  //   slideFull: 'https://github.com/koltpython/python-workshops/tree/master/1-Django',
+  //   slideCondensed: 'https://github.com/koltpython/python-workshops/tree/master/1-Django',
+  //   description:
+  //     'This workshop provides a sample of how Django Framework can help you build Web applications using Python. Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source. In this workshop, we will create a blog site with Django framework then deploy our site on the pythonanywhere.com website with a free account.',
+  //   image: ''
+  // },
+  // {
+  //   topic: 'Workshop: APIs & Data Visualization',
+  //   date: new Date(2019, 11, 9),
+  //   slideFull: 'https://github.com/koltpython/python-workshops/tree/master/2-APIs-and-Data-Visualization',
+  //   slideCondensed: 'https://github.com/koltpython/python-workshops/tree/master/2-APIs-and-Data-Visualization',
+  //   description:
+  //     'This workshop provides a sample of how you can use Python to collect and visualize data from the internet. We will utilize the requests package to collect data from Instagram APIs and use the data we gathered to create visual charts.',
+  //   image: ''
+  // }
 ];
 
 export interface Lecture {
