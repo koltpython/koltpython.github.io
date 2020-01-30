@@ -12,8 +12,9 @@ export class AppComponent {
   constructor(private idle: IdleMonitorService, private router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        (<any>window).ga('set', 'page', event.urlAfterRedirects);
-        (<any>window).ga('send', 'pageview');
+        (<any>window).gtag('config', 'UA-157342088-1', {
+          page_path: event.urlAfterRedirects
+        });
       }
     });
   }
