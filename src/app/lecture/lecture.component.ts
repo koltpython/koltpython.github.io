@@ -33,16 +33,16 @@ const LECTURE_DATA: Lecture[] = [
     description:
       'Start of the semester, program introduction, Python installations and brief introduction of Python variables, types and I/O.',
     image: ''
+  },
+  {
+    topic: 'Basic Operators, Branching & Simple Functions',
+    date: new Date(2020, 1, 4),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2.pdf',
+    description:
+      'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else). Discussion about simple functions and how we should structure our code.',
+    image: ''
   }
-  // {
-  //   topic: 'Basic Operators & Branching',
-  //   date: new Date(2019, 8, 30),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2.pdf',
-  //   description:
-  //     'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else).',
-  //   image: ''
-  // },
   // {
   //   topic: 'Strings, While Loops & Introduction to Lists',
   //   date: new Date(2019, 9, 7),
@@ -132,10 +132,10 @@ const LECTURE_DATA: Lecture[] = [
 ];
 
 export interface Lecture {
-  topic: String;
+  topic: string;
   date: Date;
-  slideCondensed: String;
-  slideFull: String;
-  description: String;
-  image: String;
+  slideCondensed: string;
+  slideFull: string;
+  description: string;
+  image: string;
 }

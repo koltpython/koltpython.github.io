@@ -8,6 +8,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
   { path: 'lectures', component: LectureComponent },
+  { path: 'sections', loadChildren: () => import('./section/section.module').then(m => m.SectionModule) },
   { path: 'assignments', component: AssignmentsComponent },
   {
     path: 'assignments/demo',
