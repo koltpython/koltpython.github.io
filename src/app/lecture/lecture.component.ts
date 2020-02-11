@@ -42,15 +42,16 @@ const LECTURE_DATA: Lecture[] = [
     description:
       'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else). Discussion about simple functions and how we should structure our code.',
     image: ''
+  },
+  {
+    topic: 'While Loops, Turtle Graphics & Strings',
+    date: new Date(2020, 1, 11),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
+    description:
+      'Introduction to strings, indexing and slicing. While loops. Graphical loop examples using turtle module.',
+    image: ''
   }
-  // {
-  //   topic: 'Strings, While Loops & Introduction to Lists',
-  //   date: new Date(2019, 9, 7),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
-  //   description: 'Introduction to lists and basic list operations, slicing lists, strings and while loops.',
-  //   image: ''
-  // },
   // {
   //   topic: 'Lists Continued, For Loops',
   //   date: new Date(2019, 9, 14),
