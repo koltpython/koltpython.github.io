@@ -51,16 +51,16 @@ const LECTURE_DATA: Lecture[] = [
     description:
       'Introduction to strings, indexing and slicing. While loops. Graphical loop examples using turtle module.',
     image: ''
+  },
+  {
+    topic: 'Lists & For Loops',
+    date: new Date(2020, 1, 18),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4.pdf',
+    description:
+      'Lists, detailed look into list methods and ways to mutate lists. Discussion about ranges, for loops, break and continue statements.',
+    image: ''
   }
-  // {
-  //   topic: 'Lists Continued, For Loops',
-  //   date: new Date(2019, 9, 14),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4.pdf',
-  //   description:
-  //     'Lists continued. More detailed look into list methods and ways to mutate lists. Discussion about ranges, for loops, break and continue statements.',
-  //   image: ''
-  // },
   // {
   //   topic: 'Functions',
   //   date: new Date(2019, 9, 21),
