@@ -60,16 +60,16 @@ const LECTURE_DATA: Lecture[] = [
     description:
       'Lists, detailed look into list methods and ways to mutate lists. Discussion about ranges, for loops, break and continue statements.',
     image: ''
+  },
+  {
+    topic: 'Functions',
+    date: new Date(2020, 1, 25),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5.pdf',
+    description:
+      'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables.',
+    image: ''
   }
-  // {
-  //   topic: 'Functions',
-  //   date: new Date(2019, 9, 21),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5.pdf',
-  //   description:
-  //     'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables.',
-  //   image: ''
-  // },
   // {
   //   topic: 'Holiday (Republic Day)',
   //   date: new Date(2019, 9, 28),

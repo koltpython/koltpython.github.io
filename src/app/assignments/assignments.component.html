@@ -7,7 +7,6 @@
   </mat-card-content>
 
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-    <!-- Title Column -->
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef>Title</th>
       <td mat-cell *matCellDef="let element">
@@ -15,31 +14,16 @@
       </td>
     </ng-container>
 
-    <!-- Replit Column -->
-    <ng-container matColumnDef="replit">
-      <th mat-header-cell *matHeaderCellDef>Repl.it Link</th>
-      <td mat-cell *matCellDef="let element"><a href="{{ element.replitLink }}" target="_blank">Repl.it</a></td>
+    <ng-container matColumnDef="handout">
+      <th mat-header-cell *matHeaderCellDef>Handout</th>
+      <td mat-cell *matCellDef="let element"><a href="{{ element.handout }}" target="_blank">Handout</a></td>
     </ng-container>
 
-    <!-- Starter Code Column -->
-    <ng-container matColumnDef="review">
-      <th mat-header-cell *matHeaderCellDef>Review</th>
-      <td mat-cell *matCellDef="let element">
-        <div *ngIf="element.reviewCondensed; else elseBlock">
-          <a href="{{ element.reviewFull }}" target="_blank">Full</a> /
-          <a href="{{ element.reviewCondensed }}" target="_blank">Condensed</a>
-        </div>
-        <ng-template #elseBlock> None </ng-template>
-      </td></ng-container
-    >
+    <ng-container matColumnDef="starter">
+      <th mat-header-cell *matHeaderCellDef>Starter</th>
+      <td mat-cell *matCellDef="let element"><a href="{{ element.starter }}" target="_blank">Starter</a></td>
+    </ng-container>
 
-    <!-- Release Column -->
-    <!-- <ng-container matColumnDef="release">
-      <th mat-header-cell *matHeaderCellDef> Released </th>
-      <td mat-cell *matCellDef="let element"> {{ element.releaseDate | date:'MMM d, h:mm a' }} </td>
-    </ng-container>  -->
-
-    <!-- Due Column -->
     <ng-container matColumnDef="due">
       <th mat-header-cell *matHeaderCellDef>Due</th>
       <td mat-cell *matCellDef="let element">{{ element.dueDate | date: 'MMM d, h:mm a' }}</td>
