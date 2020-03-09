@@ -49,6 +49,24 @@ const SECTION_DATA: Section[] = [
       'https://kinolien.github.io/gitzip/?download=koltpython/python-exercises-spring2020/tree/master/section4/starter',
     solution:
       'https://kinolien.github.io/gitzip/?download=koltpython/python-exercises-spring2020/tree/master/section4/solution'
+  },
+  {
+    topic: 'Containers, Aliasing & Mutability',
+    date: new Date(2020, 2, 4),
+    handout: 'https://github.com/koltpython/python-exercises-spring2020/raw/master/section5/section5.pdf',
+    starter:
+      'https://kinolien.github.io/gitzip/?download=koltpython/python-exercises-spring2020/tree/master/section5/starter',
+    solution:
+      'https://kinolien.github.io/gitzip/?download=koltpython/python-exercises-spring2020/tree/master/section5/solution'
+  },
+  {
+    topic: 'Error & Exception Handling, File Input and Output',
+    date: new Date(2020, 2, 11),
+    handout: 'https://github.com/koltpython/python-exercises-spring2020/raw/master/section6/section6.pdf',
+    starter:
+      'https://kinolien.github.io/gitzip/?download=koltpython/python-exercises-spring2020/tree/master/section6/starter',
+    solution:
+      'https://kinolien.github.io/gitzip/?download=koltpython/python-exercises-spring2020/tree/master/section6/solution'
   }
 ];
 

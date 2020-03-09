@@ -69,32 +69,24 @@ const LECTURE_DATA: Lecture[] = [
     description:
       'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables.',
     image: ''
+  },
+  {
+    topic: 'Containers, Aliasing & Mutability',
+    date: new Date(2020, 2, 3),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6.pdf',
+    description:
+      'More detailed look into Python data and memory model. Discussion about aliasing and cloning. List, Tuple, Set and Dictionary types and differences between them. Comparison between reassigning and mutation.',
+    image: ''
+  },
+  {
+    topic: 'Error & Exception Handling, File Input and Output',
+    date: new Date(2020, 2, 10),
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7-condensed.pdf',
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7.pdf',
+    description: 'Standard file input and output in Python. Discussion about Exceptions and how to handle them.',
+    image: ''
   }
-  // {
-  //   topic: 'Holiday (Republic Day)',
-  //   date: new Date(2019, 9, 28),
-  //   slideCondensed: null,
-  //   slideFull: null,
-  //   description: '',
-  //   image: ''
-  // },
-  // {
-  //   topic: 'Containers, Aliasing & Mutability',
-  //   date: new Date(2019, 10, 4),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6.pdf',
-  //   description:
-  //     'More detailed look into Python data and memory model. Discussion about aliasing and cloning. List, Tuple, Set and Dictionary types and differences between them. Comparison between reassigning and mutation.',
-  //   image: ''
-  // },
-  // {
-  //   topic: 'Error & Exception Handling, File Input and Output',
-  //   date: new Date(2019, 10, 11),
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7-condensed.pdf',
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7.pdf',
-  //   description: 'Standard file input and output in Python. Discussion about Exceptions and how to handle them.',
-  //   image: ''
-  // },
   // {
   //   topic: 'Example: Connect Four',
   //   date: new Date(2019, 10, 18),
