@@ -24,6 +24,18 @@
       <td mat-cell *matCellDef="let element"><a href="{{ element.starter }}" target="_blank">Starter</a></td>
     </ng-container>
 
+    <ng-container matColumnDef="solution">
+      <th mat-header-cell *matHeaderCellDef>Solution</th>
+      <td mat-cell *matCellDef="let element">
+        <span *ngIf="element.solution; else elseTemplate">
+          <a href="{{ element.solution }}" target="_blank">Solution</a>
+        </span>
+        <ng-template #elseTemplate>
+          Not Released
+        </ng-template>
+      </td>
+    </ng-container>
+
     <ng-container matColumnDef="due">
       <th mat-header-cell *matHeaderCellDef>Due</th>
       <td mat-cell *matCellDef="let element">{{ element.dueDate | date: 'MMM d, h:mm a' }}</td>

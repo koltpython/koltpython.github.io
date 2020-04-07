@@ -9,13 +9,13 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
     trigger('detailExpand', [
       state('collapsed', style({ height: '0px', minHeight: '0', display: 'none' })),
       state('expanded', style({ height: '*' })),
-      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)'))
-    ])
-  ]
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
+    ]),
+  ],
 })
 export class LectureComponent implements OnInit {
   dataSource = LECTURE_DATA;
-  columnsToDisplay = ['topic', 'date', 'slide'];
+  columnsToDisplay = ['topic', 'date', 'slide', 'video'];
   expandedElement: Lecture | null;
 
   constructor() {}
@@ -32,7 +32,6 @@ const LECTURE_DATA: Lecture[] = [
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture1/lecture1.pdf',
     description:
       'Start of the semester, program introduction, Python installations and brief introduction of Python variables, types and I/O.',
-    image: ''
   },
   {
     topic: 'Basic Operators, Branching & Simple Functions',
@@ -41,7 +40,6 @@ const LECTURE_DATA: Lecture[] = [
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture2/lecture2.pdf',
     description:
       'More detailed look into types and conversions, basic assignment, logical and numerical operations. Branching (if, elif, else). Discussion about simple functions and how we should structure our code.',
-    image: ''
   },
   {
     topic: 'While Loops, Turtle Graphics & Strings',
@@ -50,7 +48,6 @@ const LECTURE_DATA: Lecture[] = [
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture3/lecture3.pdf',
     description:
       'Introduction to strings, indexing and slicing. While loops. Graphical loop examples using turtle module.',
-    image: ''
   },
   {
     topic: 'Lists & For Loops',
@@ -59,7 +56,6 @@ const LECTURE_DATA: Lecture[] = [
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture4/lecture4.pdf',
     description:
       'Lists, detailed look into list methods and ways to mutate lists. Discussion about ranges, for loops, break and continue statements.',
-    image: ''
   },
   {
     topic: 'Functions',
@@ -68,7 +64,6 @@ const LECTURE_DATA: Lecture[] = [
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture5/lecture5.pdf',
     description:
       'Detailed look into Python functions. Discussion about parameters, return type, default parameters, variadic positional arguments, local and global variables.',
-    image: ''
   },
   {
     topic: 'Containers, Aliasing & Mutability',
@@ -77,7 +72,6 @@ const LECTURE_DATA: Lecture[] = [
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture6/lecture6.pdf',
     description:
       'More detailed look into Python data and memory model. Discussion about aliasing and cloning. List, Tuple, Set and Dictionary types and differences between them. Comparison between reassigning and mutation.',
-    image: ''
   },
   {
     topic: 'Error & Exception Handling, File Input and Output',
@@ -85,25 +79,16 @@ const LECTURE_DATA: Lecture[] = [
     slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7-condensed.pdf',
     slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture7/lecture7.pdf',
     description: 'Standard file input and output in Python. Discussion about Exceptions and how to handle them.',
-    image: ''
-  }
-  // {
-  //   topic: 'Example: Connect Four',
-  //   date: new Date(2019, 10, 18),
-  //   slideCondensed: null,
-  //   slideFull: null,
-  //   description: 'Example implementation of a command-line version of Connect Four game.',
-  //   image: ''
-  // },
-  // {
-  //   topic: 'Using Third Party Packages',
-  //   date: new Date(2019, 10, 25),
-  //   slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture9/lecture9.pdf',
-  //   slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture9/lecture9-condensed.pdf',
-  //   description:
-  //     'Python and VS Code installations. Python Package Index(PyPI) and Package Installer for Python (pip). Installing and using third party packages using pip. Virtual environments (venv).',
-  //   image: ''
-  // },
+  },
+  {
+    topic: 'Python Modules and Third-Party Packages',
+    date: new Date(2020, 3, 7),
+    slideFull: 'https://github.com/koltpython/python-slides/raw/master/Lecture8/lecture8.pdf',
+    slideCondensed: 'https://github.com/koltpython/python-slides/raw/master/Lecture8/lecture8-condensed.pdf',
+    description:
+      'Python modules and packages. Python Package Index(PyPI) and Package Installer for Python (pip). Installing and using third party packages using pip. Virtual environments (venv).',
+    video: 'https://drive.google.com/drive/folders/1RIltTZ1hBG6XE52p_8efyw-_BLtiPVCy?usp=sharing',
+  },
   // {
   //   topic: 'Workshop: Django',
   //   date: new Date(2019, 11, 2),
@@ -130,5 +115,6 @@ export interface Lecture {
   slideCondensed: string;
   slideFull: string;
   description: string;
-  image: string;
+  image?: string;
+  video?: string;
 }
