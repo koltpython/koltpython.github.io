@@ -89,15 +89,16 @@ const LECTURE_DATA: Lecture[] = [
       'Python modules and packages. Python Package Index(PyPI) and Package Installer for Python (pip). Installing and using third party packages using pip. Virtual environments (venv).',
     video: 'https://drive.google.com/drive/folders/1RIltTZ1hBG6XE52p_8efyw-_BLtiPVCy?usp=sharing',
   },
-  // {
-  //   topic: 'Workshop: Django',
-  //   date: new Date(2019, 11, 2),
-  //   slideFull: 'https://github.com/koltpython/python-workshops/tree/master/1-Django',
-  //   slideCondensed: 'https://github.com/koltpython/python-workshops/tree/master/1-Django',
-  //   description:
-  //     'This workshop provides a sample of how Django Framework can help you build Web applications using Python. Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source. In this workshop, we will create a blog site with Django framework then deploy our site on the pythonanywhere.com website with a free account.',
-  //   image: ''
-  // },
+  {
+    topic: 'Workshop: pandas & Matplotlib',
+    date: new Date(2019, 3, 20),
+    slideFull: 'https://github.com/koltpython/python-workshops/tree/master/4-Introduction-to-Pandas-and-Matplotlib',
+    slideCondensed:
+      'https://github.com/koltpython/python-workshops/tree/master/4-Introduction-to-Pandas-and-Matplotlib',
+    description:
+      'This workshop aims to show how Python can be used for data science. In this workshop, we will examine the USA Covid-19 data with the tools provided by pandas and matplotlib packages.',
+    video: 'https://drive.google.com/drive/folders/17FeApakVTktj41pJcpgdbLjUKMFc4muo?usp=sharing',
+  },
   // {
   //   topic: 'Workshop: APIs & Data Visualization',
   //   date: new Date(2019, 11, 9),

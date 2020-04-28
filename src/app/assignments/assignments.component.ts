@@ -12,6 +12,16 @@ const ASSIGNMENT_DATA: Assignment[] = [
     releaseDate: new Date(2020, 1, 25),
     dueDate: new Date(2020, 2, 3, 23, 59, 59),
   },
+  {
+    title: 'Data Visualization',
+    handout:
+      'https://github.com/koltpython/python-assignments-spring2020/raw/master/Assignment2/handout/spr20_assignment_2.pdf',
+    starter:
+      'https://kinolien.github.io/gitzip/?download=koltpython/python-assignments-spring2020/tree/master/Assignment2/starter',
+    solution: '',
+    releaseDate: new Date(2020, 3, 28),
+    dueDate: new Date(2020, 4, 10, 23, 59, 59),
+  },
 ];
 
 interface Assignment {
