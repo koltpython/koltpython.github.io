@@ -16,7 +16,7 @@ interface TermAlumniRecord {
   selector: 'app-alumni',
   templateUrl: './alumni.component.html',
   styleUrls: ['./alumni.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AlumniComponent implements OnInit {
   teamMembers: TermTeamMemberRecord[] = [
@@ -25,8 +25,8 @@ export class AlumniComponent implements OnInit {
       year: 2019,
       teamMembers: [
         { name: 'Ahmet Uysal', kuId: 'auysal16' },
-        { name: 'İpek Köprülülü', kuId: 'ikoprululu16' }
-      ]
+        { name: 'İpek Köprülülü', kuId: 'ikoprululu16' },
+      ],
     },
     {
       term: 'Fall',
@@ -35,9 +35,23 @@ export class AlumniComponent implements OnInit {
         { name: 'Ahmet Uysal', kuId: 'auysal16' },
         { name: 'Ceren Kocaoğullar', kuId: 'ckocaogullar15' },
         { name: 'Gül Sena Altıntaş', kuId: 'galtintas17' },
-        { name: 'Hasan Can Aslan', kuId: 'haslan16' }
-      ]
-    }
+        { name: 'Hasan Can Aslan', kuId: 'haslan16' },
+      ],
+    },
+    {
+      term: 'Spring',
+      year: 2020,
+      teamMembers: [
+        { name: 'Ahmet Uysal', kuId: 'auysal16' },
+        { name: 'Ayşe Turşucular', kuId: 'atursucular18' },
+        { name: 'Ceren Kocaoğullar', kuId: 'ckocaogullar15' },
+        { name: 'Fırat Tamur', kuId: 'ftamur16' },
+        { name: 'Halil Eralp Koçaş', kuId: 'hkocas15' },
+        { name: 'Haluk Ceyhun Gün', kuId: 'hgun16' },
+        { name: 'Hasan Can Aslan', kuId: 'haslan16' },
+        { name: 'Necla Mutlu', kuId: 'nmutlu17' },
+      ],
+    },
   ];
 
   alumni: TermAlumniRecord[] = [
@@ -53,8 +67,8 @@ export class AlumniComponent implements OnInit {
         { name: 'Oğulcan Sarıoğlu', kuId: 'osarioglu14' },
         { name: 'Petrus Johannes Gerrits', kuId: 'pgerrits15' },
         { name: 'Samet Ağca', kuId: 'sagca14' },
-        { name: 'Sümeyye Koşkulu', kuId: 'skoskulu17' }
-      ]
+        { name: 'Sümeyye Koşkulu', kuId: 'skoskulu17' },
+      ],
     },
     {
       term: 'Fall',
@@ -91,9 +105,49 @@ export class AlumniComponent implements OnInit {
         { name: 'Zeynep Özörnek', kuId: 'zozornek18' },
         { name: 'İlayda Arslan', kuId: 'iarslan15' },
         { name: 'İrem Uğurad', kuId: 'iugurad18' },
-        { name: 'İris Eskinazi', kuId: 'ieskinazi15' }
-      ]
-    }
+        { name: 'İris Eskinazi', kuId: 'ieskinazi15' },
+      ],
+    },
+    {
+      term: 'Spring',
+      year: 2020,
+      alumni: [
+        { name: 'Ahmet Çağatay Ünsal', kuId: 'aunsal15' },
+        { name: 'Ata Efes', kuId: 'aefes17' },
+        { name: 'Ata Kadirioğlu', kuId: 'akadirioglu16' },
+        { name: 'Atahan Kalaycı', kuId: 'akalayci18' },
+        { name: 'Ayşe Tuğçe Şahin', kuId: 'asahin19' },
+        { name: 'Beste Senem Değirmenci', kuId: 'bdegirmenci19' },
+        { name: 'Deniz Koçer', kuId: 'dkocer17' },
+        { name: 'Elif Başaran', kuId: 'ebasaran13' },
+        { name: 'Emre Güler', kuId: 'eguler15' },
+        { name: 'Fatma Ece Özkan', kuId: 'fozkan19' },
+        { name: 'Göktuğ Karabıyık', kuId: 'gkarabiyik' },
+        { name: 'Hakan Yılmazer', kuId: 'hyilmazer18' },
+        { name: 'İlke Gürgan', kuId: 'igurgan17' },
+        { name: 'İsmail Berker Beysel', kuId: 'ibeysel' },
+        { name: 'Kutay Şenses', kuId: 'ksenses17' },
+        { name: 'Lamija Grabus', kuId: 'lgrabus19' },
+        { name: 'Lara Karakaya', kuId: 'lkarakaya17' },
+        { name: 'Mehmet Hakan Can', kuId: 'mcan18' },
+        { name: 'Meldanur Çetin', kuId: 'mcetin16' },
+        { name: 'Murat Göktaş', kuId: 'mgoktas15' },
+        { name: 'Ömer Faruk Günay', kuId: 'ogunay17' },
+        { name: 'Oya Suran', kuId: 'oyasuran18' },
+        { name: 'Özen Nergis Dolcerocca', kuId: 'odolcerocca' },
+        { name: 'Rauf Günsay', kuId: 'rgunsay18' },
+        { name: 'Şakir Oktay Gür', kuId: 'sgur15' },
+        { name: 'Sedef Aksoy', kuId: 'saksoy17' },
+        { name: 'Şeref Can Esmer', kuId: 'sesmer15' },
+        { name: 'Shahin Baghirov', kuId: 'sbaghirov14' },
+        { name: 'Simge Kelekçi', kuId: 'skelekci18' },
+        { name: 'Tuan Berk Kılıçoğlu', kuId: 'tkilicoglu' },
+        { name: 'Tuğçe Çelikçi', kuId: 'tcelikci15' },
+        { name: 'Uğur Alimoğlu', kuId: 'ualimoglu17' },
+        { name: 'Waseem Akhtar', kuId: 'wakhtar19' },
+        { name: 'Zeynep Nur Eğlenen', kuId: 'zeglenen16' },
+      ],
+    },
   ];
 
   constructor() {}
