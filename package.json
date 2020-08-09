@@ -27,7 +27,6 @@
     "@scullyio/ng-lib": "latest",
     "@scullyio/scully": "latest",
     "core-js": "^2.6.11",
-    "ng-terminal": "^2.3.0",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

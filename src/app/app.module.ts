@@ -11,7 +11,6 @@ import { LectureComponent } from './lecture/lecture.component';
 import { AssignmentsComponent } from './assignments/assignments.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { FooterComponent } from './footer/footer.component';
-import { FeedbackComponent } from './feedback/feedback.component';
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -23,7 +22,6 @@ import { HttpClientModule } from '@angular/common/http';
     AssignmentsComponent,
     ResourcesComponent,
     FooterComponent,
-    FeedbackComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule, HttpClientModule],
   bootstrap: [AppComponent]
