@@ -20,11 +20,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Publish
 
-Run `ng build --prod --base-href="https://koltpython.com"` to build the project in production mode.
+Run `ng build --prod --base-href="https://koltpython.github.io"` to build the project in production mode.
 
 Run `npm run scully` to generate static content of the routes using [Scully](https://github.com/scullyio/scully/).
 
-Run `ngh --branch=master --cname=koltpython.com --dir=dist/static` to publish the site via GitHub Pages.
+Run `ngh --branch=master --dir=dist/static` to publish the site via GitHub Pages.
 
 ## Running end-to-end tests
 
