@@ -51,6 +51,11 @@ export class TeamComponent implements OnInit {
       title: 'Junior COMP & INDR Student'
     },
     {
+      name: 'İpek Köprülülü',
+      image: '../assets/images/ipek.jpg',
+      title: 'Senior COMP & MAVA Student'
+    },
+    {
       name: 'Ayşe Turşucular',
       image: '../assets/images/ayse.jpg',
       title: 'Sophomore ECON & INDR Student'
